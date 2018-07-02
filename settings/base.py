@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'index',
+    'settings',
     'admin_webapp',
     'django.contrib.admin',
     'django.contrib.auth',
