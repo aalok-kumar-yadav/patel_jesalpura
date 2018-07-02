@@ -8,7 +8,9 @@ cryptography==1.9
 cupshelpers==1.0
 defer==1.0.6
 distro-info==0.17
+dj-database-url==0.5.0
 Django==2.0.6
+gunicorn==19.8.1
 httplib2==0.9.2
 idna==2.5
 keyring==10.4.0
@@ -24,12 +26,13 @@ oauth==1.0.1
 olefile==0.44
 pexpect==4.2.1
 Pillow==4.1.1
+psycopg2==2.7.5
 pycrypto==2.6.1
 pycups==1.9.73
 pygobject==3.24.1
 python-apt==1.4.0b3
 python-debian==0.1.30
-pytz==2018.4
+pytz==2018.5
 pyxdg==0.25
 PyYAML==3.12
 reportlab==3.4.0
