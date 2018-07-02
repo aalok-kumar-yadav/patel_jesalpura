@@ -3,11 +3,11 @@
 # \Users\YourName\Dev\cfehome\src\cfehome\settings\ on windows
 
 
-from .base import *
+# from .base import *
 
 from .production import *
 
-try:
-   from .local import *
-except:
-   pass
+# try:
+#    from .local import *
+# except:
+#    pass
