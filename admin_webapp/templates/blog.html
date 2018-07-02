@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Admin Panel</title>
+    <!-- Bootstrap core CSS-->
+    {% load static %}
+
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- Page level plugin CSS-->
+
+    <link href="{% static 'vendor/datatables/dataTables.bootstrap4.css' %}" rel="stylesheet">
+    <!-- Custom styles for this template-->
+
+    <link href="{% static 'css/sb-admin.css' %}" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+
+</head>
+
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top" style="font-family: 'Josefin Sans' !important;">
+  <!-- Navigation section-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="redirect_admin/"><b>Patel & Jesalpura</b></a>
+
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="redirect_admin/">
+                <!-- <i class="fa fa-fw fa-area-chart"></i> -->
+                <span class="nav-link-text" style="color: white">Career</span>
+              </a>
+            </li>
+
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="">
+            <!-- <i class="fa fa-fw fa-dashboard"></i> -->
+            <span class="nav-link-text" style="color: white">Blog Post</span>
+          </a>
+        </li>
+
+
+      </ul>
+
+
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="color: white">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+
+
+    </div>
+  </nav>
+
+
+
+
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="breadcrumb-item active">Post</li>
+
+          <input type="submit" class="btn " onclick="show_addpost_division();return false" style="margin-left:79%;background-color:#006666; color:white" value="ADD POST">
+      </ol>
+
+
+
+
+<form class="addpost_class"  method="post" action="addPost/" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div class = "form-group">
+      <label><b>Title</b></label>
+      <input type = "text" id="blogTitle"  name= "blogTitle" class="form-control">
+    </div>
+
+
+    <div class = "form-group">
+      <label><b>Description </b></label>
+      <textarea type = "text" id="blogDescription" name="blogDescription" class="form-control" rows="7" ></textarea>
+    </div>
+
+
+
+    <div class="form-group row content-justify-around">
+        <div  class=" col-6">
+            <label><b>Cover Image: </b></label><br>
+            <input type="file" id="coverImage" name="coverImage" class="form-control" style="max-width: 70%">
+        </div>
+
+
+         <div  class=" col-6">
+            <label><b>Blog Image: </b></label><br>
+            <input type="file" id="blogImage" name="blogImage" class="form-control " style="max-width: 70%">
+        </div>
+
+    </div>
+
+
+  <input id="addpost_id" type="submit" class="btn"  style="background-color: #006666;color:white" bac value="POST">
+</form>
+
+
+ <!-- End of add blog post --->
+
+
+        <!---  Start Table view of Blog  --->
+
+
+
+
+
+        <div class="card mb-3" style="margin-top:2%">
+        <div class="card-header">
+          <i class="fa fa-table"></i>All Blogs</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr >
+                    <th style="width:25%">Title</th>
+                    <th style="width:20%">Date</th>
+                    <th >Description</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+              </thead>
+
+
+                <tbody>
+
+                  {% for blog in blog_list %}
+
+                      <tr>
+                          <td>{{blog.blogTitle}}</td>
+                          <td>{{blog.blogPostDateTime}}</td>
+                          <td>{{blog.blogDescription}}</td>
+
+
+                          <td><button id="ed_blog_id" class="btn edit_button_class"  style="background-color:white !important;">
+                              <a  href="edit/{{blog.blogId}}" >
+                          <img name="{{blog.blogId}}"  src="{% static 'images/edit.png' %}"  width="22px;">
+                          </a>
+                          </button></td>
+
+
+                          <td> <button class="btn " style="background-color:white !important;">
+                              <a href="deletepost/{{blog.blogId}}">
+                              <img id = "{{blog.blogId}}" src="{% static 'images/delete.png' %}" width="22px;">
+                              </a>
+                          </button>
+                          </td>
+
+                      </tr>
+
+                  {% endfor %}
+
+                </tbody>
+            </table>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    <!---- Start of Edit Post division --->
+
+
+
+
+
+
+
+        <!--- End of EDit Post division --->
+
+
+        <!---  End Table view of Blog  --->
+
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+
+
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center alok_class">
+          <small>Copyright © Your Website 2018</small>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Scroll to Top Button-->
+
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+
+    <!-- Logout Modal-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+
+
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="logout">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <script>
+            function show_addpost_division(){
+
+                 $(".addpost_class").show();
+
+            }
+
+
+
+
+             $('#addpost_id').click(function(){
+              $(".addpost_class").hide();
+          });
+
+
+
+
+
+        </script>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Core plugin JavaScript-->
+
+
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <!-- Page level plugin JavaScript-->
+
+
+    <script src="{% static 'vendor/chart.js/Chart.min.js' %}"></script>
+
+
+    <script src="{% static 'vendor/datatables/jquery.dataTables.js' %}"></script>
+
+
+    <script src="{% static 'vendor/datatables/dataTables.bootstrap4.js' %}"></script>
+    <!-- Custom scripts for all pages-->
+
+    <script src="{% static 'js/sb-admin.min.js' %}"></script>
+
+    <!-- Custom scripts for this page-->
+    <script src="{% static 'js/sb-admin-datatables.min.js' %}"></script>
+
+
+    <script src="{% static 'js/sb-admin-charts.min.js' %}"></script>
+  </div>
+  </div>
+</body>
+
+</html>

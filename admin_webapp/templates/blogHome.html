@@ -1,0 +1,257 @@
+<!-- Website html and javascript code  --->
+
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Patel & Jesalpura</title>
+
+        {% load static %}
+
+
+	    <!-- included all necessary link for styleseet, fonts, javascript  --->
+
+	    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/navHighlighterStyle.css' %}">
+
+
+
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet">
+
+		<!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+
+		<!-- Link added for stylish corousel for team list --->
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+		<script type="text/javascript" src="{% static 'js/jquery.waterwheelCarousel.js' %}"></script>
+
+
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+		<!-- Script for team slider --->
+
+		    <script src="{% static 'js/jssor.slider-27.1.0.min.js' %}" type="text/javascript"></script>
+
+
+
+
+
+
+
+	<!-- End of this script -->
+
+	</head>
+
+
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	  	<div id="Home">
+
+	  			<!---Start navigation Bar -->
+
+	    	<nav  class="navbar navbar-expand-lg navbar fixed-top navbar_class justify-content-center navbar-light bg-light ">
+	   			<div class="row menu_style">
+			 		<a class="navbar-brand" href="#Logo">
+	    				<a class="nav-link " href="" style="color:white;" > <h4 class="logo_class" ><b> Patel & Jesalpura </b> </h4></a>
+
+			 		</a>
+
+			 		<button class="navbar-toggler navbar_button" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			    		<span class="navbar-toggler-icon"></span>
+			 		</button>
+
+				  	<div class="collapse navbar-collapse  navbar_class" id="navbarText">
+				    	<ul class="navbar-nav ml-auto navHighlighter nav_item_list">
+
+				      		<li class="nav-item">
+				        		<a class="nav-link" href="#Home" style="color:white;" >HOME</a>
+				      		</li>
+
+						    <li class="nav-item">
+						    	<a class="nav-link" href="#Services" style="color:white;" >SERVICES</a>
+						    </li>
+
+						    <li class="nav-item">
+						    	<a class="nav-link" href="#Team" style="color:white;" >TEAM</a>
+						    </li>
+
+
+
+						    <li class="nav-item">
+						    	<a class="nav-link" href="#Careers" style="color:white;" >CAREERS</a>
+						    </li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#Blog" style="color:white;" >BLOG</a>
+
+                </li>
+
+						    <li class="nav-item">
+						    	<a class="nav-link" href="#Contact" style="color:white;" >CONTACT</a>
+
+						    </li>
+
+
+
+					    </ul>
+					</div>
+				</div>
+			</nav>
+
+
+			<!--- End Navigation Bar -->
+
+
+
+
+
+
+
+	  	</div>
+
+	  		<!--- end of home page --->
+
+
+
+
+
+
+
+
+        <!-- Start of Blog Page --->
+
+        <div class="row " id="Blog"  style="margin-top:7%">
+			<div class="col blog_nav_menu">
+
+
+			</div>
+		</div>
+
+<div  class="container ">
+
+  <fieldset class="career_field_class">
+    <legend class="legend_class" style="margin-left: 3%;" ><b class="career_class">BLOG HOME</b></legend>
+
+    <div class="container ">
+
+<div class="row" style="margin-left:2%">
+
+{% for i in blog_list %}
+
+        <div class="col-sm-4" style="margin-top:2%">
+
+              <div class="card" style="width: 19rem; height: 26rem;">
+                <img class="card-img-top" src="{{i.blogImage}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><b>{{i.blogTitle}}</b></h5>
+                  <p class="card-text">{{i.blogDescription}}</p>
+                <a href="" class="btn submit_button_class">Read More</a>
+                </div>
+
+            </div>
+
+ </div>
+{% endfor  %}
+
+
+
+
+
+
+        </div>
+
+    </div>
+  </fieldset>
+
+
+
+		</div>
+
+
+
+
+
+
+        <!--- End of Blog Page--- >
+
+
+
+
+
+
+			<!--- End of Our Contact Page -->
+
+
+
+			<div class="row footer bg-light">
+				<div class="col">
+					<h5 class="text-center">Patel&Jesalpura,Chartered Accountant</h5>
+				</div>
+				<div class="col">
+					<h5 class="text-center">Copyright &copy; 2018</h5>
+				</div>
+				<div class="col">
+					<h5 class="text-center">Made by: <a href="http://www.cosaia.com/">Cosaia PVT LTD</a></h5>
+				</div>
+			</div>
+		</div>
+
+<!-- script for stylish corousel -->
+
+
+<!-- End of script for stylish corousel -->
+
+
+
+<!--- start of  team slide script --->
+
+    <!-- start script for active navlink script--->
+
+    <script>
+      $(function() {
+
+        $('body').navHighlighter({
+          underlineColour : '#F0C181',
+          blur : '0px',
+          height : '1px'
+        });
+
+      });
+    </script>
+
+<!--- end of active navlink script  --->
+
+
+
+<!--- End of Team slider script  --->
+
+
+
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+		<script type="text/javascript" src="{% static 'js/image-effect.js' %}"></script>
+
+    <script src="{% static 'js/jquery.navHighlighter.js' %}"></script>
+
+
+
+  	</body>
+</html>

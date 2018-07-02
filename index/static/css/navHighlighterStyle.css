@@ -1,0 +1,45 @@
+/*navigation presets - make sure you add the class of .navHighlighter*/
+.top {
+	padding-top: 65px;
+	background: white;
+	display: block;
+}
+
+ul.navHighlighter {
+
+}
+
+ul.navHighlighter li {
+	
+}
+
+ul.navHighlighter li a {
+	
+}
+
+/*after, focus and hover states*/
+li a:focus {
+	outline: 0;
+}
+
+li:after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0;
+	background: transparent;
+	transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+
+
+.nav-active:after {
+	content:'';
+	display: block;
+	height: 3px;
+	background: #40E0D0;
+	width: 100%;
+
+}
+
+
