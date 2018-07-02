@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['https://patelandjesalpuranew.herokuapp.com']
 
 INSTALLED_APPS = [
     'index',
+    'settings',
     'admin_webapp',
     'django.contrib.admin',
     'django.contrib.auth',
