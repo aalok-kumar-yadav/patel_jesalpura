@@ -36,10 +36,11 @@ urlpatterns = [
     url(r'^bloghome/', views.blogHome_view, name="blogHome_view"),
     url(r'^blog_description/(?P<blog_id>[0-9]+)$', views.blogDescription_view, name="blogDescription_view"),
     url(r'^admin_page/blog/deletepost/(?P<blog_id>[0-9]+)$', views.deletepost_view, name="deletepost_view"),
-    url(r'^admin_page/blog/edit/(?P<blog_id>[0-9]+)$', views.edit_blog_details_view, name="edit_blog_details_view"),
+    url(r'^admin_page/blog/edit/(?P<blog_id>[0-9]+)$', views.edit_blog_details_view, name="edit_b(log_details_view"),
     url(r'^admin_page/blog/edit/update/(?P<blog_id>[0-9]+)$', views.update_blog_entry_view, name="update_blog_entry_view"),
     url(r'^admin_page/blog/edit/redirect_blog/', views.redirect_to_blog, name="redirect_to_blog"),
     url(r'^admin_page/candidate_details/redirect_to_blog/', views.redirect_to_blog, name="redirect_blog"),
     url(r'^admin_page/blog/change_blog_status/(?P<number>[0-9]+)$', views.blog_status, name="blog_status"),
+    url(r'^admin_page/candidate_details/view_resume/(?P<phone_number>[0-9]+)$', views.pdf_viewer, name="pdf_view"),
 
 ]
