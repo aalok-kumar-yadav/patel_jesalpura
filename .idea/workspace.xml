@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2942c1b-f789-4211-a3f8-8db7c7d44017" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/can_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/can_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patel_jesalpura/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/patel_jesalpura/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="c2942c1b-f789-4211-a3f8-8db7c7d44017" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +162,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="25" width="1311" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21506211" />
       <window_info anchor="bottom" id="TODO" order="6" />
