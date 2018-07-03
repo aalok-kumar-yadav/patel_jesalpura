@@ -13,6 +13,7 @@ class SessionClass(models.Model):  # Session class and their attribute
     admin_email = models.EmailField(max_length=70, null=False)
     admin_password = models.CharField(max_length=20)
     login_status = models.CharField(max_length=5)
+    blog_status = models.CharField(max_length=5)
 
 
 class BlogPostClass(models.Model):  # BlogPost class and their attribute

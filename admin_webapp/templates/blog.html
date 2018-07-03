@@ -52,7 +52,7 @@
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
               <a class="nav-link" href="redirect_admin/">
                 <!-- <i class="fa fa-fw fa-area-chart"></i> -->
-                <span class="nav-link-text" style="color: white">Career</span>
+                <span class="nav-link-text" >Career</span>
               </a>
             </li>
 
@@ -72,7 +72,7 @@
 
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="color: white">
-            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+            <i class="fa fa-fw fa-sign-out"></i> Logout</a>
         </li>
       </ul>
 
@@ -88,12 +88,29 @@
       <!-- Breadcrumbs-->
 
       <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="#">Blog</a>
-        </li>
-        <li class="breadcrumb-item active">Post</li>
 
-          <input type="submit" class="btn " onclick="show_addpost_division();return false" style="margin-left:79%;background-color:#006666; color:white" value="ADD POST">
+
+            <li class="breadcrumb-item active" style="margin-top:1%"><b>Blog-Status</b></li>
+
+
+          {%  ifequal context.blog_status "True" %}
+          <a href="change_blog_status/0"   style="margin-left:8%" >
+              <button  class="btn "   style=";background-color:#1e7e34; color:white" >ENABLED </button>
+          </a>
+
+          {% endifequal %}
+
+
+          {%  ifequal context.blog_status "False" %}
+          <a href="change_blog_status/1"   style="margin-left:8%" >
+              <button  class="btn "   style="background-color:#600f06; color:white" >DISABLED </button>
+          </a>
+
+          {% endifequal %}
+
+
+
+          <input type="submit" class="btn " onclick="show_addpost_division();return false" style="margin-left:50%;background-color:#006666; color:white" value="ADD POST">
       </ol>
 
 
@@ -162,7 +179,7 @@
 
                 <tbody>
 
-                  {% for blog in blog_list %}
+                  {% for blog in context.blog_list %}
 
                       <tr>
                           <td>{{blog.blogTitle}}</td>
@@ -197,18 +214,13 @@
       </div>
 
 
-    <!---- Start of Edit Post division --->
+    <!---  End Table view of Blog  --->
+
+     <!---- STart of on off toggle  --->
 
 
+     <!---- End of on off toggle  --->
 
-
-
-
-
-        <!--- End of EDit Post division --->
-
-
-        <!---  End Table view of Blog  --->
 
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
@@ -217,7 +229,7 @@
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center alok_class">
-          <small>Copyright © Your Website 2018</small>
+          <small>Copyright © Patel&Jesalpura 2018</small>
         </div>
       </div>
     </footer>
@@ -268,8 +280,13 @@
           });
 
 
+        function change_blog_view_status()
+        {
 
+        $.ajax({url: "redirect_admin/", success: function(result){
+        }});
 
+        }
 
         </script>
 

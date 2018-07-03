@@ -43,6 +43,8 @@ def blog_view(request):
     blog_list = []
     blog_database_object = BlogPostClass.objects.all()
 
+    session_obj = SessionClass.objects.get(admin_email="alokyadav@cosaia.com")
+
     for blog_temp_obj in blog_database_object:
 
         blog_obj = BlogPostClass()
@@ -55,7 +57,9 @@ def blog_view(request):
         blog_obj.blogCoverImage = blog_obj.blogCoverImage
         blog_list.append(blog_obj)
 
-    return render(request, 'blog.html', {'blog_list': blog_list})
+        context = {'blog_list': blog_list, 'blog_status': session_obj.blog_status }
+
+    return render(request, 'blog.html', {'context': context})
 
 
 def candidate_details_view(request, phone_number):
@@ -148,7 +152,6 @@ def deletepost_view(request, blog_id):
     return redirect('blog_view')
 
 
-
 def blogHome_view(request):
 
     blogpost_obj = BlogPostClass.objects.all()
@@ -167,9 +170,17 @@ def blogHome_view(request):
     return render(request, 'blogHome.html', {'blog_list': blog_list})
 
 
-def blogDescription_view(request):
+def blogDescription_view(request, blog_id):
 
-    return render(request, 'blogDescription.html', {'data': "hello alok"})
+
+    blog_obj = BlogPostClass.objects.get(blogId=blog_id)
+    blg_image = "data:image/png;base64," + blog_obj.blogImage
+    cv_image = "data:image/png;base64," + blog_obj.blogCoverImage
+
+    context = {'blogId': blog_id, 'blogTitle': blog_obj.blogTitle, 'blogDescription':
+        blog_obj.blogDescription, 'blogImage': blg_image, 'coverImage': cv_image, 'blogPostDateTime': blog_obj.blogPostDateTime}
+
+    return render(request, 'blogDescription.html', {'context': context})
 
 
 def edit_blog_details_view(request, blog_id):
@@ -221,3 +232,17 @@ def update_blog_entry_view(request, blog_id):
 def redirect_to_blog(request):
 
     return redirect('blog_view')
+
+
+def blog_status(request, number):
+
+    if number == "0":
+        SessionClass.objects.filter(admin_email="alokyadav@cosaia.com").update(blog_status="False")
+    else:
+        SessionClass.objects.filter(admin_email="alokyadav@cosaia.com").update(blog_status="True")
+
+    return redirect('blog_view')
+
+
+
+

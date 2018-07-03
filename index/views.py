@@ -3,11 +3,10 @@ from django.shortcuts import render
 from admin_webapp.models import Resume_class, SessionClass, BlogPostClass
 from django.shortcuts import redirect
 
-# Create your views here.
 
 def home(request):
     blogpost_obj = BlogPostClass.objects.all()
-
+    session_obj = SessionClass.objects.get(admin_email="alokyadav@cosaia.com")
     blog_list = []
 
     count =0
@@ -24,7 +23,9 @@ def home(request):
         blog_list.append(temp_obj)
         count = count+1
 
-    return render(request, 'index.html', {'blog_list': blog_list})
+    context = {'blog_list': blog_list, 'blog_status': session_obj.blog_status}
+
+    return render(request, 'index.html', {'context': context})
 
 
 def upload_file(request):

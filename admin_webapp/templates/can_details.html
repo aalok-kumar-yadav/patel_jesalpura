@@ -36,7 +36,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top" style="font-family: 'Josefin Sans' !important;">
   <!-- Navigation section-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <a class="navbar-brand" href="index.html"><b>Patel & Jesalpura </b></a>
+      <a class="navbar-brand" href="redirect_admin/"><b>Patel & Jesalpura </b></a>
 
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -46,14 +46,14 @@
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-              <a class="nav-link" href="">
+              <a class="nav-link" href="redirect_admin/" style="color:white">
                 <!-- <i class="fa fa-fw fa-area-chart"></i> -->
                 <span class="nav-link-text">Career</span>
               </a>
             </li>
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="redirect_to_blog/">
             <!-- <i class="fa fa-fw fa-dashboard"></i> -->
             <span class="nav-link-text">Blog Post</span>
           </a>
@@ -64,7 +64,7 @@
       <ul class="navbar-nav ml-auto">
 
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="color:white">
             <i class="fa fa-fw fa-sign-out"></i>Logout</a>
         </li>
       </ul>
@@ -78,7 +78,7 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#">Career</a>
+          <a href="">Career</a>
         </li>
         <li class="breadcrumb-item active">Candidate</li>
       </ol>
@@ -93,7 +93,7 @@
 <table class="table table-bordered" id="dataTableName" width="100%" cellspacing="0">
 
  <tr>
-                <td align="center">Name: {{content.name}}</td>
+     <td align="center"><b>Name:</b> {{content.name}}</td>
 
           </tr>
 
@@ -104,9 +104,9 @@
 
 
     <tr>
-                <td align="center">Email: {{content.email}}</td>
-        <td align="center">Phone: {{content.phone}}</td>
-        <td align="center">Resume: {{content.name}}.pdf </td>
+                <td align="center"><b>Email: </b>{{content.email}}</td>
+        <td align="center"><b>Phone:</b> {{content.phone}}</td>
+        <td align="center"><b>Resume:</b> {{content.name}}.pdf </td>
 
           </tr>
 
@@ -130,7 +130,7 @@
             </table>
 
         </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        <!--<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
       </div>
     </div>
 
@@ -141,7 +141,7 @@
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center alok_class">
-          <small>Copyright © Your Website 2018</small>
+          <small>Copyright © Patel&Jesalpura 2018</small>
         </div>
       </div>
     </footer>
