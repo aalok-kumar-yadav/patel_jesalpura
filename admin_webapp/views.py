@@ -143,6 +143,7 @@ def deletepost_view(request, blog_id):
 
     print("blog_id = "+blog_id)
     BlogPostClass.objects.filter(blogId=blog_id).delete()
+    print("Row is deleted")
 
     return redirect('blog_view')
 
@@ -213,6 +214,7 @@ def update_blog_entry_view(request, blog_id):
     temp_obj.blogCoverImage = cv_image
 
     temp_obj.save()
+    print("\n  its invoked \n")
     return redirect('blog_view')
 
 
