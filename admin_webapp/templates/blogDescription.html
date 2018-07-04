@@ -54,11 +54,20 @@
 
 
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--<div class="company_logo_class jesalpura_logo_class">-->
+	<!--<h4 style="color:black"><b>Patel&Jesalpura Insights</b></h4>-->
+<!--</div>-->
+	  	<div  id="Home" >
 
-	  	<div id="Home" >
+			 <img class="blog_cover_image_class"  src="{{context.coverImage}}" >
 
-			 <img style="width: 92% !important; height: 420px !important; margin: 4% !important;  margin-top: 2% !important;
-   "  src="{{context.coverImage}}" >
+			<div class="blog_title_on_cover_image_class card">
+				<h4><b>{{context.blogTitle}}</b></h4>
+				<br>
+				<p><i>PwC is asking important questions about how economies can more effectively deliver for
+					society once again, and the role of business in this process.</i></p>
+
+			</div>
 
 	  	</div>
 
@@ -74,14 +83,89 @@
 
 <p><img src=" {{context.blogImage}} " class="blogImage_class" alt="Pineapple" >
 
-	{{context.blogDescription}}
+
 </p>
+		{{context.blogDescription}}
 
 		</div>
+	<div style="margin-left:7%" class="row">
+		<div class="col-2" style="margin-top: 0.9%;">  <h4>Share with </h4> </div>
+		<div class="col-1 social_icon">
+			<a href="https://plus.google.com/share?url=https://patelandjesalpuranew.herokuapp.com/blog_description/{{context.blogId}}" target="_blank"><h4> </h4>
+			<img src="{% static 'images/g_plus.png' %}"  style="width:30px"></a>
+		</div>
+		<div class="col-1 social_icon">
+			<a href="https://www.facebook.com/sharer.php?u=https://patelandjesalpuranew.herokuapp.com/blog_description/{{context.blogId}}" target="_blank"><h4> </h4>
+			<img src="{% static 'images/facebook.png' %}"  style="width:30px"></a>
+		</div>
+		<div class="col-1 social_icon">
+			<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://patelandjesalpuranew.herokuapp.com/blog_description/{{context.blogId}}" target="_blank"><h4> </h4>
+			<img src="{% static 'images/linkedin.png' %}"  style="width:30px"></a>
+		</div>
+		<div class="col-1 social_icon">
+			<a href="https://twitter.com/intent/tweet?url=https://patelandjesalpuranew.herokuapp.com/blog_description/{{context.blogId}}&via=alokkum23028336" target="_blank"><h4> </h4>
+			<img src="{% static 'images/twitter.png' %}"  style="width:30px"></a>
+		</div>
+
+		<div class="7" style="margin-left:43%;margin-top: 0.9%;"> <a href="bloghome/"><h5>See All Insights </h5></a></div>
+
+	</div>
+
 
 </div>
 
 
+<div style="margin:8%;" class="comment_division_class comment_form_class">
+
+	<h5><b>Comment Here</b></h5>
+	<br>
+	 <form method="post"  action="upload/" enctype="multipart/form-data">
+
+      <div class="row form-group" style="margin-top:2%">
+
+
+        <div class="col-8">
+        {% csrf_token %}
+             <label >Name</label>
+
+         <input type="text" class="form-control" id="fullname" name="fname" required>
+        <br>
+
+        <label >Email</label>
+
+        <input type="email" class="form-control " id="email_id"  name="email" required>
+        <br>
+
+			 <label>Comment</label>
+          <textarea rows="6" cols="40" name="whywe" class="form-control "></textarea>
+
+			<div class="comment_div_button_class"><button class="btn default comment_button_class">Submit</button></div>
+
+        </div>
+
+
+
+
+
+      </div>
+
+	 </form>
+
+</div>
+
+
+	<div class="row footer bg-light">
+				<div class="col">
+					<h5 class="text-center">Patel&Jesalpura,Chartered Accountant</h5>
+				</div>
+				<div class="col">
+					<h5 class="text-center">Copyright © Patel&Jesalpura 2018</h5>
+				</div>
+				<div class="col">
+					<h5 class="text-center">Made with <img src="{% static 'images/heart.png' %}"
+					style="width:30px" > By: <a class="cosaia_class" target="_blank" href="http://www.cosaia.com/">Cosaia PVT LTD</a></h5>
+				</div>
+			</div>
 
 
     </body>

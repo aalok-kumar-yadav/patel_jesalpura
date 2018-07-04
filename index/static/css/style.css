@@ -780,8 +780,8 @@ background-color: #F0C181;
 float: left;
 width:350px;
 height:170px;
-margin-right:1.8%;
-margin-bottom:1.2%;
+margin-right:3.4%;
+margin-bottom:1.8%;
 margin-top:1%;
 
 
@@ -789,13 +789,15 @@ margin-top:1%;
 
 .blog_details_class{
 
-margin: 4% !important;
+margin: 8% !important;
+margin-top:4% !important;
+margin-bottom:2% !important;
 background-color:white;
 border-color: #F0C181;
 	border-style:solid;
-	border-width: 3px;
+	border-width: 1px;
 	padding:2%;
-
+line-height: 34px;
 
 }
 
@@ -805,7 +807,7 @@ margin-top:1%;
 }
 
 .blog_des_division_class{
-background: rgb(240,193,129,0.3);
+
 padding-top:1.2%;
 padding-bottom:1.2%;
 
@@ -1021,6 +1023,32 @@ font-family: 'Josefin Sans', sans-serif;
 }
 
 
+.blog_cover_image_class{
+
+    width: 100% !important;
+    height: 574px !important;
+    margin-top: 3% !important;
+    margin-bottom: 3% !important;
+
+
+}
+
+.social_icon{
+margin-left:-4% !important;
+}
+
+.blog_title_on_cover_image_class{
+
+    position: absolute;
+    background-color: white;
+    width: 36%;
+    padding: 3%;
+    margin-top: -43%;
+    margin-left: 5%;
+
+}
+
+
 
 .message_container{
 	margin-top: 2%;
@@ -1036,6 +1064,11 @@ body{
 	font-family: 'Josefin Sans' !important;
 	background-color:white;
 
+
+
+}
+
+.comment_form_class{
 
 
 }
@@ -1101,6 +1134,7 @@ body{
 .hidden_team_bck_class{
 
 padding-bottom:2%;
+background: rgb(240,193,129,0.2);
 
 }
 
@@ -1142,6 +1176,11 @@ margin-left: 1%;
 	
 }
 
+
+.comment_division_class{
+
+padding:2%;
+}
 .team_class{
 	vertical-align: middle;
 	font-size: 30px;
@@ -1156,6 +1195,18 @@ margin-left: 1%;
 	padding-top: 3.7%;
 	padding-bottom: 2%;
 
+}
+
+.comment_div_button_class{
+
+margin-top:4%;
+
+}
+
+.comment_button_class{
+
+background-color:#555765;
+color:white;
 }
 
 #hidden_fieldset_id{
@@ -1231,6 +1282,7 @@ font-weight: normal !important;
 	margin-bottom: 30px;
 	margin-top: 30px;
 	padding-top: 20px;
+	background-color:#e8ebef !important;
 }
 .social-icon{
 	font-size:28; 

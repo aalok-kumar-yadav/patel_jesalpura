@@ -57,7 +57,7 @@ def blog_view(request):
         blog_obj.blogCoverImage = blog_obj.blogCoverImage
         blog_list.append(blog_obj)
 
-        context = {'blog_list': blog_list, 'blog_status': session_obj.blog_status }
+    context = {'blog_list': blog_list, 'blog_status': session_obj.blog_status }
 
     return render(request, 'blog.html', {'context': context})
 
