@@ -4,6 +4,7 @@ from admin_webapp.models import Resume_class, SessionClass, BlogPostClass
 from index.models import CommentClass
 from django.shortcuts import redirect
 
+auth_error = "True"
 
 def admin_view(request):
     aspirant_list = []
@@ -74,8 +75,9 @@ def candidate_details_view(request, phone_number):
 
 
 def login_view(request):
-
-    return render(request, 'login.html')
+    print("printing auth:")
+    print(auth_error)
+    return render(request, 'login.html', {'context': auth_error})
 
 
 def authentication(request):
@@ -91,7 +93,8 @@ def authentication(request):
             status_flag = "False"
 
         if status_flag == "False":
-
+            global auth_error
+            auth_error = "False"
             return redirect('login_view')
 
         else:

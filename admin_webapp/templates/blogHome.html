@@ -72,23 +72,23 @@
 
 <div  class="container ">
 
-  <fieldset class="career_field_class">
-    <legend class="legend_class" style="margin-left: 3%;" ><b class="career_class">INSIGHTS HOME</b></legend>
+  <fieldset class="career_field_class blog_home_fieldset_class">
+    <legend class="legend_class" style="margin-left: 3%;" ><b class="name_cross_blog_home_class">INSIGHTS HOME</b></legend>
 
-    <div class="container ">
+    <div class="container " style="padding: 4%;">
 
-<div class="row" style="margin-left:2%">
+<div class="row" >
 
 {% for i in blog_list %}
 
-        <div class="col-sm-4" style="margin-top:2%">
+        <div class="col-sm-4" >
 
               <div class="card" style="width: 19rem; height: 26rem;">
                 <img class="card-img-top" src="{{i.blogImage}}" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title"><b>{{i.blogTitle}}</b></h5>
                   <p class="card-text">{{i.blogDescription}}</p>
-                <a href="" class="btn submit_button_class">Read More</a>
+                <a id="{{i.blogId}}"  onclick="blog_description(this.id)" class="btn submit_button_class">Read More</a>
                 </div>
 
             </div>
@@ -151,15 +151,12 @@
     <!-- start script for active navlink script--->
 
     <script>
-      $(function() {
+     function blog_description(blog_id)
+     {
+   		 url ="blog_description/"+blog_id;
+   		 window.open(url);
+	 }
 
-        $('body').navHighlighter({
-          underlineColour : '#F0C181',
-          blur : '0px',
-          height : '1px'
-        });
-
-      });
     </script>
 
 <!--- end of active navlink script  --->

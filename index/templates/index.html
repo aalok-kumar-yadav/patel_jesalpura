@@ -282,6 +282,9 @@
 
 
 
+
+
+
 			<!--- Service page started-->
 		
 		 	<div class="row nav_service_class_div" id="Services" style="margin-top: 5%;">
@@ -1102,10 +1105,13 @@
 
 
 
-        <div>  <p class="team_crossicon_class" onclick="restore_team_division();return false">
-          <button type="button" class="close crossicon_button_class" aria-label="Close">
-  <span style="font-size: 55px;" aria-hidden="true">&times;</span>
-</button>
+        <div>
+<a href="" onclick="restore_team_division();return false">
+ <i class="material-icons team_close_icon_class team_crossicon_class "
+     >clear</i>
+</a>
+
+
         </div>
     </fieldset>
 </div>
@@ -1286,13 +1292,9 @@
  </div>
 {% endfor  %}
 
-
-
-
-
+        <button class="btn button-default see_all_blog_class"  onclick="open_blog_home_page()"> See All Blogs</button>
 
         </div>
-
     </div>
 
   </fieldset>
@@ -1390,7 +1392,7 @@
         <div class="col-5">
           <label>Message</label>
           
-          <textarea rows="9" name="message" cols="40" class="form-control input_class"></textarea>
+          <textarea rows="9" name="message" cols="40" class="form-control input_class" required></textarea>
             
           
           
@@ -1409,12 +1411,19 @@
                            
         });
 
-function blog_description(blog_id){
+    function blog_description(blog_id){
 
     url ="blog_description/"+blog_id;
 
     window.open(url);
 
+
+}
+
+function open_blog_home_page(){
+
+
+    window.open("bloghome");
 
 }
         
@@ -1511,8 +1520,8 @@ function restore_service_division(){
 
 function restore_team_division(){
   
-  $("#carousel").hide();
-  $("#team_slider").show();
+  $("#carousel").fadeOut(500);
+  $("#team_slider").fadeIn(2300);
 
 
 }

@@ -29,7 +29,9 @@
 
         <form method="post" action="authentication/" enctype="multipart/form-data">
           {% csrf_token %}
-          <div>hello alok</div>
+
+
+
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input class="form-control" id="exampleInputEmail1" name="adminEmail" type="email" aria-describedby="emailHelp" placeholder="Enter email">
@@ -39,7 +41,9 @@
             <input class="form-control" id="exampleInputPassword1" name="adminPassword" type="password" placeholder="Password">
           </div>
 
-
+{%  ifequal context "False" %}
+            <label style="margin-left: 24%;color:red;"><p >Invalid Email or Password<p></p></label>
+           {% endifequal %}
           <button type="submit" class="btn btn-default btn-block" style="background-color:#11544b !important">Login</button>
 
         </form>

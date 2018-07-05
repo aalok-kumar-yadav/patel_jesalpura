@@ -454,6 +454,10 @@ margin-bottom: 2.2%;
 }
 
 
+.career_class{
+border-width:1px !important;
+}
+
 .legend_class{
 	width: auto;
 
@@ -666,7 +670,12 @@ padding-bottom:2%;
 
 
 
-
+.team_close_icon_class{
+    color:#f18e07;
+    font-weight:bolder !important;
+    font-size: 27px !important;
+    line-height: 3 !important;
+}
 
 
 
@@ -706,10 +715,7 @@ height:400px !important;
 overflow:hidden;
 }
 
-.crossicon_button_class{
-width: 20px !important;
-color:  #8B8C8C;
-}
+
 
 .member_info_class{
 	
@@ -775,6 +781,13 @@ background-color: #F0C181;
 	box-shadow: none !important;
 }
 
+.see_all_blog_class{
+
+margin:2%;
+background-color:#d2a971;
+box-shadow: none !important;
+
+}
 
 .blogImage_class{
 float: left;
@@ -1189,6 +1202,11 @@ padding:2%;
 .career_class{
 	vertical-align: middle;
 	font-size: 28px;
+}
+
+.name_cross_blog_home_class{
+vertical-align: middle;
+	font-size: 23px;
 }
 
 .career_nav_menu{
