@@ -1302,3 +1302,13 @@ footer{
 	font-size: 16px;
 	font-family: 'Josefin Sans';
 }
+
+.comment_div_class{
+
+margin-top:1%;
+background-color:#f8f9fa;
+width:auto;
+padding:2%;
+padding-bottom:0% !important;
+
+}

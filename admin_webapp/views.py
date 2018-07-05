@@ -1,6 +1,7 @@
 import base64, time, datetime
 from django.shortcuts import render
 from admin_webapp.models import Resume_class, SessionClass, BlogPostClass
+from index.models import CommentClass
 from django.shortcuts import redirect
 
 
@@ -20,7 +21,6 @@ def admin_view(request):
         aspirant_list.append(resume_obj)
 
     session_obj = SessionClass.objects.get()
-    print("\n" +session_obj.login_status +"\n")
     if session_obj.login_status == "True":
         return render(request, 'home.html', {'aspirant_list': aspirant_list})
     else:
@@ -172,14 +172,26 @@ def blogHome_view(request):
 
 def blogDescription_view(request, blog_id):
 
-
     blog_obj = BlogPostClass.objects.get(blogId=blog_id)
+    comment_db_obj = CommentClass.objects.all()
     blg_image = "data:image/png;base64," + blog_obj.blogImage
     cv_image = "data:image/png;base64," + blog_obj.blogCoverImage
+    comment_list = []
+
+    for c_obj in comment_db_obj:
+        if c_obj.blogId == int(blog_id):
+            comment_class_obj = CommentClass()
+            comment_class_obj.commentId = c_obj.commentId
+            comment_class_obj.blogId = c_obj.blogId
+            comment_class_obj.comment = c_obj.comment
+            comment_class_obj.cEmail = c_obj.cEmail
+            comment_class_obj.cName = c_obj.cName
+            comment_class_obj.commentDate = c_obj.commentDate
+            comment_list.append(comment_class_obj)
 
     context = {'blogId': blog_id, 'blogTitle': blog_obj.blogTitle, 'blogDescription':
-        blog_obj.blogDescription, 'blogImage': blg_image, 'coverImage': cv_image, 'blogPostDateTime': blog_obj.blogPostDateTime}
-
+        blog_obj.blogDescription, 'blogImage': blg_image, 'coverImage': cv_image, 'blogPostDateTime': blog_obj.blogPostDateTime,
+               'comment_list': comment_list}
     return render(request, 'blogDescription.html', {'context': context})
 
 
@@ -198,9 +210,6 @@ def edit_blog_details_view(request, blog_id):
 def update_blog_entry_view(request, blog_id):
 
     blog_obj = BlogPostClass.objects.get(blogId=blog_id)
-
-
-
     new_title = request.POST.get("blogTitle_edit")
     new_description = request.POST.get("blogDescription_edit")
     new_datetime = datetime.datetime.fromtimestamp(time.time()).strftime(' %H:%M:%S %d-%m-%Y')
@@ -225,7 +234,6 @@ def update_blog_entry_view(request, blog_id):
     temp_obj.blogCoverImage = cv_image
 
     temp_obj.save()
-    print("\n  its invoked \n")
     return redirect('blog_view')
 
 
@@ -244,5 +252,17 @@ def blog_status(request, number):
     return redirect('blog_view')
 
 
+def add_comment(request, blog_id):
+    total_row = BlogPostClass.objects.all().count()
+    if request.method == 'POST':
+        comment_obj = CommentClass()
+        comment_obj.commentId = total_row + 1
+        comment_obj.blogId = blog_id
+        comment_obj.cName = request.POST.get("cName")
+        comment_obj.cEmail = request.POST.get("cEmail")
+        comment_obj.comment = request.POST.get("comment")
+        comment_obj.commentDate = datetime.datetime.fromtimestamp(time.time()).strftime('%d-%m-%Y')
+        comment_obj.save()
 
+        return redirect('blogDescription_view', blog_id)
 

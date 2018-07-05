@@ -4,6 +4,7 @@ from admin_webapp.models import Resume_class, SessionClass, BlogPostClass
 from django.shortcuts import redirect
 
 
+
 def home(request):
     blogpost_obj = BlogPostClass.objects.all()
     session_obj = SessionClass.objects.get(admin_email="alokyadav@cosaia.com")
@@ -44,3 +45,10 @@ def upload_file(request):
 
         return redirect('home')
     return render(request, 'index.html')
+
+
+
+
+
+
+
