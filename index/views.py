@@ -19,6 +19,8 @@ def home(request):
         temp_obj.blogId = obj.blogId
         temp_obj.blogTitle = obj.blogTitle
         temp = obj.blogDescription
+
+
         temp_obj.blogDescription = temp[:88] +"...."
         temp_obj.blogImage = "data:image/png;base64," + obj.blogImage
         blog_list.append(temp_obj)

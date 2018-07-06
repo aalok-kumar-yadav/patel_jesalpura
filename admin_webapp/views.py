@@ -75,8 +75,7 @@ def candidate_details_view(request, phone_number):
 
 
 def login_view(request):
-    print("printing auth:")
-    print(auth_error)
+
     return render(request, 'login.html', {'context': auth_error})
 
 
@@ -130,7 +129,9 @@ def addpost_view(request):
 
     post_object.blogId = total_row+1
     post_object.blogTitle = request.POST.get("blogTitle")
+
     post_object.blogDescription = request.POST.get("blogDescription")
+
     post_object.blogPostDateTime = datetime.datetime.fromtimestamp(time.time()).strftime(' %H:%M:%S %d-%m-%Y')
 
     img = request.FILES['blogImage']
@@ -148,9 +149,7 @@ def addpost_view(request):
 
 def deletepost_view(request, blog_id):
 
-    print("blog_id = "+blog_id)
     BlogPostClass.objects.filter(blogId=blog_id).delete()
-    print("Row is deleted")
 
     return redirect('blog_view')
 
@@ -191,6 +190,7 @@ def blogDescription_view(request, blog_id):
             comment_class_obj.cName = c_obj.cName
             comment_class_obj.commentDate = c_obj.commentDate
             comment_list.append(comment_class_obj)
+
 
     context = {'blogId': blog_id, 'blogTitle': blog_obj.blogTitle, 'blogDescription':
         blog_obj.blogDescription, 'blogImage': blg_image, 'coverImage': cv_image, 'blogPostDateTime': blog_obj.blogPostDateTime,

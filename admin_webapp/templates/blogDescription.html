@@ -47,6 +47,7 @@
 
 		    <script src="{% static 'js/jssor.slider-27.1.0.min.js' %}" type="text/javascript"></script>
 
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 
 	<!-- End of this script -->
 
@@ -81,11 +82,11 @@
 			<h5>Posted At: {{context.blogPostDateTime}}</h5>
 		</div>
 
-<p><img src=" {{context.blogImage}} " class="blogImage_class" alt="Pineapple" >
+<!--<p><img src=" {{context.blogImage}} " class="blogImage_class" alt="Pineapple" >-->
 
 
-</p>
-		{{context.blogDescription}}
+<!--</p>-->
+		<pre style="">{{context.blogDescription}}</pre>
 
 		</div>
 	<div style="margin-left:7%" class="row">
@@ -107,7 +108,7 @@
 			<img src="{% static 'images/twitter.png' %}"  style="width:30px"></a>
 		</div>
 
-		<div class="7" style="margin-left:43%;margin-top: 0.9%;"> <a href="bloghome/"><h5>See All Insights </h5></a></div>
+		<div class="7" style="margin-left:43%;margin-top: 0.9%;"> <a href="bloghome"><h5>See All Insights </h5></a></div>
 
 	</div>
 
@@ -139,6 +140,9 @@
 			 <label>Comment</label>
           <textarea rows="6" cols="40" name="comment" class="form-control "></textarea>
 
+	<div class="g-recaptcha" data-sitekey="6LeQo2IUAAAAAK-szFFpcMdQGYxDcmQHwTRG_znY"></div>
+
+			<br>
 			<div class="comment_div_button_class"><button class="btn default comment_button_class">Submit</button></div>
 
         </div>
