@@ -795,9 +795,15 @@ margin-top:1%;
 
 }
 
-pre {
+pre{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
 
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
 }
+
 
 .blog_details_class{
 
