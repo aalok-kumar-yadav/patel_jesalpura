@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2942c1b-f789-4211-a3f8-8db7c7d44017" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/can_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/can_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_webapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +28,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin_webapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+            <state relative-caret-position="186">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -125,8 +120,8 @@
         <option value="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" />
         <option value="$PROJECT_DIR$/admin_webapp/templates/blog.html" />
         <option value="$PROJECT_DIR$/admin_webapp/templates/can_details.html" />
-        <option value="$PROJECT_DIR$/admin_webapp/views.py" />
         <option value="$PROJECT_DIR$/patel_jesalpura/urls.py" />
+        <option value="$PROJECT_DIR$/admin_webapp/views.py" />
       </list>
     </option>
   </component>
@@ -522,8 +517,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_webapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        <state relative-caret-position="186">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

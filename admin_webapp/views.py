@@ -77,12 +77,12 @@ def candidate_details_view(request, phone_number):
 
 def login_view(request):
     temp_err_var = ""
+    global auth_error
     if auth_error == "False":
         temp_err_var = "False"
     else:
         temp_err_var = "True"
 
-    global auth_error
     auth_error = "True"
     return render(request, 'login.html', {'context': temp_err_var})
 
