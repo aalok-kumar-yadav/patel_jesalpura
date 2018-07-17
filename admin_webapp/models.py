@@ -4,7 +4,7 @@ from django.db import models
 class Resume_class(models.Model):  # Resume class and their attribute
     name = models.CharField(max_length=30)
     email = models.EmailField(max_length=70, null=True)
-    phone = models.IntegerField(default=200)
+    phone = models.BigIntegerField()
     whywehire_message = models.CharField(max_length=1000, blank=True)
     pdf_file = models.CharField(max_length=1000000)
 

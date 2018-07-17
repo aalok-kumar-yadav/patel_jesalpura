@@ -75,7 +75,7 @@ def candidate_details_view(request, phone_number):
     return render(request, 'can_details.html', {'content': content})
 
 
-def login_view(request):
+def login_view(request):        # a view for login function
     temp_err_var = ""
     global auth_error
     if auth_error == "False":
