@@ -6,6 +6,7 @@ from django.shortcuts import redirect
 
 auth_error = "True"
 
+
 def admin_view(request):
     aspirant_list = []
     database_object = Resume_class.objects.all()
@@ -75,8 +76,15 @@ def candidate_details_view(request, phone_number):
 
 
 def login_view(request):
+    temp_err_var = ""
+    if auth_error == "False":
+        temp_err_var = "False"
+    else:
+        temp_err_var = "True"
 
-    return render(request, 'login.html', {'context': auth_error})
+    global auth_error
+    auth_error = "True"
+    return render(request, 'login.html', {'context': temp_err_var})
 
 
 def authentication(request):
