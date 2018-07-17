@@ -82,7 +82,8 @@ def login_view(request):
         temp_err_var = "False"
     else:
         temp_err_var = "True"
-
+    print (temp_err_var)
+    print("\n")
     auth_error = "True"
     return render(request, 'login.html', {'context': temp_err_var})
 
