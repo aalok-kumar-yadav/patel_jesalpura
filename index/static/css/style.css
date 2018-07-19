@@ -3,21 +3,203 @@
 
 @media screen and (max-width: 400px) {
 
+#hidden_fieldset_id{
+margin-right:4px !important;
+
+}
+
+
+.message_btn_desktop{
+display:none;
+
+}
+
+.mobile_col_5_class{
+
+margin-left: -17%;
+}
+
+ms_mobile_class{
+    width: 286% !important;
+
+}
+
+.message_btn_mobile{
+display: block !important;
+
+}
+
+.logo_class{
+font-size: 18px;
+}
+
+.msg_mobile_class{
+width:286% !important;
+}
+
+.message_class_desktop{
+display:none;
+}
+
+.message_class_mobile{
+
+display: block !important;
+}
+
+
+.team_class{
+font-size: 17px !important;
+}
+
+.input_class{
+
+width:240% !important;
+}
+
+
+
+
+
+.attach_resume_class{
+
+width:150%;
+}
+
+.footer_company_name_class{
+font-size:14px;
+
+}
+
+.heart_image_class{
+width:20px !important;
+}
+
+.service_open_container{
+
+   margin-right: 0% !important;
+margin-bottom: 2.2% !important;
+
+}
+
+h5{
+font-size: 17px
+
+}
+
+.why_we_hire_class_mobile{
+display:block!important;
+}
+
+.why_we_hire_class_desktop{
+display:none;
+}
+
+.watermark_image_class{
+
+opacity:0.4;
+width:75% !important;
+}
+
+
+
+.hidden_service_icon_class{
+    position: absolute;
+    margin-bottom: 69px !important;
+       margin-top: -54% !important;
+    margin-left: 37% !important;
+
+
+}
+
+.service_crossicon_class{
+margin-left:93% !important;
+}
+
+.service_col_content{
+margin-left: 3%;
+}
+
+.service_list_class{
+margin-left:1%;
+}
+
+.service_col{
+
+margin-left: 10% !important;
+}
+
+.fieldset_class_service{
+margin-right:6% !important;
+margin-left:6% !important;
+}
+
 
 .legend_class_serv{
-	font-size: 15px !important;
+	font-size: 16px !important;
 	margin-left: 70% !important;
 	vertical-align: center;
 
+}
+
+.career_class{
+font-size:16px !important;
+
+}
+
+h3{
+
+font-size: 17px;
 }
 
 .service_headline_normal{
 	font-size: 14px !important;
 
 }
+
+.blog_card_row_div_class{
+
+margin-left:0px !important;
+}
+
+.blog_container_div_class{
+padding:0px !important;
+}
+
+
+.input_class_file{
+    width: 200%;
+}
+
+.blog_view_card_div_class{
+margin-left:0px !important;
+margin-bottom: 14% !important;
+}
+
+.blog_card_div{
+
+width: 17.7rem !important;
+ height: 26rem !important;
+}
+
+.navbar_button{
+margin-left: -16px;
+}
+
 .service_header{
 	font-size: 10px !important;
 
+}
+
+.readmore_button_class{
+margin-left:0px !important;
+
+}
+.font_home_tit{
+font-size:13px !important;
+}
+
+h4{
+font-size:17px;
 }
 
 .service_item_row{
@@ -34,7 +216,7 @@ font-size: 13px !important;
 }
 
 .legend_class_tagline_class{
-	font-size: 15px !important;
+	font-size: 18px !important;
 }
 
 .home_image_class{
@@ -63,6 +245,8 @@ height: 600px !important;
 
 .carousel-caption{
 	    top:30% !important;
+	 right: 5%;
+     left: 5%;
 }  
 
 .navbar_class{
@@ -81,7 +265,7 @@ height: 600px !important;
 
 
 p{
-	font-size: 10px;
+	font-size: 13px;
 }
 
 
@@ -376,6 +560,17 @@ background: rgb(240,193,129,0.3);
 
 }
 
+.message_class_mobile{
+
+display: none;
+}
+
+.blog_card_div{
+
+width: 21rem; height: 27rem;
+}
+
+
 .service_bckg_color_division{
 
 background: rgb(240,193,129,0.3);
@@ -391,9 +586,9 @@ padding-bottom: 0.1%;
 
 .service_crossicon_class{
 
-	margin-left: 97% !important;
-	max-width: 20px !important;
-	margin-top: -29px !important;
+	margin-left: 97% ;
+	max-width: 20px ;
+	margin-top: -29px ;
 
 
 }
@@ -416,10 +611,12 @@ margin-left: 94.7%;
 .service_div_content::-webkit-scrollbar {
 background-color: transparent;
 
+
 }
 
 .service_div_content{
-	overflow:scroll;height:390px;
+	overflow-x:auto;
+	height:390px;
 }
 
 
@@ -435,9 +632,13 @@ background-color: transparent;
 	/*margin-top: 2%;
 	margin-bottom: 2%;
 */
+margin-left: 4%;
+    margin-right: -4%;
 margin-bottom: 2.2%;
 	
 }
+
+
 
 .career_field_class{
 	border-color: #F0C181;
@@ -456,6 +657,11 @@ border-width:1px !important;
 .legend_class{
 	width: auto;
 
+}
+
+.why_we_hire_class_mobile{
+
+display:none;
 }
 
 .legend_class_team{
@@ -511,6 +717,12 @@ h6{
 
 
 
+.watermark_image_class{
+
+opacity:0.4;
+
+}
+
 
 
 .address_container{
@@ -522,6 +734,16 @@ h6{
 }
 
 .input_class{
+	border-color: #F0C181 !important;
+	border-width: 2px !important;
+}
+
+.msg_mobile_class{
+border-color: #F0C181 !important;
+	border-width: 2px !important;
+}
+
+.input_class_message{
 	border-color: #F0C181 !important;
 	border-width: 2px !important;
 }
@@ -699,6 +921,12 @@ background-color: green;
 	height:200px !important;
 	background-color: blue;
 }
+
+.message_btn_mobile{
+display: none;
+
+}
+
 
 .team_container_class{
 cursor:default;
@@ -982,6 +1210,9 @@ menu
 	
 
 }
+.message_submit_button_div_class{
+margin-top:3%;
+}
 
 .member_col{
 width: 95%;
@@ -1078,7 +1309,7 @@ margin-left:-4% !important;
 }
 
 body{
-	 font-size: 18px;
+	 font-size: 16px;
 	font-family: 'Josefin Sans' !important;
 	background-color:white;
 
@@ -1335,3 +1566,5 @@ padding:2%;
 padding-bottom:0% !important;
 
 }
+
+
