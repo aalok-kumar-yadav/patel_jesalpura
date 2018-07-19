@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c2942c1b-f789-4211-a3f8-8db7c7d44017" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/blogHome.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/blogHome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/css/navHighlighterStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/index/static/css/navHighlighterStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/index/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/index.html" afterDir="false" />
     </list>
@@ -20,11 +19,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="1645" lean-forward="true" selection-start-line="1645" selection-end-line="1645" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patel_jesalpura/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_webapp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="1048" column="74" lean-forward="true" selection-start-line="1048" selection-start-column="74" selection-end-line="1048" selection-end-column="74" />
+            <state relative-caret-position="75">
+              <caret line="1354" column="6" selection-start-line="1354" selection-start-column="6" selection-end-line="1354" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#6;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#legend#0;n#fieldset#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -35,11 +61,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index/static/css/style.css">
+      <file leaf-file-name="blogDescription.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blogDescription.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="617" column="20" selection-start-line="617" selection-start-column="20" selection-end-line="617" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -55,21 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>service_col_</find>
-      <find>hidden_service_container</find>
-      <find>hidden_fieldset_id</find>
-      <find>service_crossicon_class</find>
-      <find>body</find>
-      <find>p</find>
-      <find>watermark_image</find>
-      <find>service_open</find>
-      <find>watermark_image_class</find>
-      <find>service_o</find>
-      <find>0.4</find>
-      <find>3</find>
-      <find>navH</find>
-      <find>3px</find>
-      <find>ready</find>
       <find>legend_class</find>
       <find>p{</find>
       <find>rem</find>
@@ -82,9 +111,24 @@
       <find>overflow</find>
       <find>service_div</find>
       <find>callout-content</find>
-      <find>service_div_content</find>
-      <find>service_div_c</find>
       <find>scroll</find>
+      <find>comment_div_class</find>
+      <find>service_div_c</find>
+      <find>comment_division_clas</find>
+      <find>service_div_content</find>
+      <find>med</find>
+      <find>320</find>
+      <find>member_description_division_class</find>
+      <find>1</find>
+      <find>member_image</find>
+      <find>hidden_</find>
+      <find>blog_view_card_div_class</find>
+      <find>blog_card_div</find>
+      <find>blog_deta</find>
+      <find>blog_details_class</find>
+      <find>social_i</find>
+      <find>shar</find>
+      <find>footer</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -109,17 +153,17 @@
         <option value="$PROJECT_DIR$/admin_webapp/admin.py" />
         <option value="$PROJECT_DIR$/index/models.py" />
         <option value="$PROJECT_DIR$/admin_webapp/templates/login.html" />
-        <option value="$PROJECT_DIR$/admin_webapp/templates/blogHome.html" />
         <option value="$PROJECT_DIR$/index/views.py" />
-        <option value="$PROJECT_DIR$/admin_webapp/templates/blog.html" />
         <option value="$PROJECT_DIR$/admin_webapp/templates/can_details.html" />
         <option value="$PROJECT_DIR$/patel_jesalpura/urls.py" />
         <option value="$PROJECT_DIR$/admin_webapp/models.py" />
         <option value="$PROJECT_DIR$/admin_webapp/templates/home.html" />
         <option value="$PROJECT_DIR$/admin_webapp/views.py" />
-        <option value="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" />
         <option value="$PROJECT_DIR$/index/static/css/navHighlighterStyle.css" />
         <option value="$PROJECT_DIR$/index/templates/index.html" />
+        <option value="$PROJECT_DIR$/admin_webapp/templates/blogHome.html" />
+        <option value="$PROJECT_DIR$/admin_webapp/templates/blog.html" />
+        <option value="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" />
         <option value="$PROJECT_DIR$/index/static/css/style.css" />
       </list>
     </option>
@@ -152,26 +196,13 @@
             <path>
               <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
               <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_webapp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
+              <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -425,13 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blogHome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_webapp/templates/edit_blog.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -452,45 +476,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="184" column="64" selection-start-line="184" selection-start-column="64" selection-end-line="184" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_webapp/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="114" column="68" selection-start-line="114" selection-start-column="68" selection-end-line="114" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_webapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_webapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patel_jesalpura/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blogDescription.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="100" selection-start-line="88" selection-start-column="100" selection-end-line="88" selection-end-column="100" />
         </state>
       </provider>
     </entry>
@@ -501,10 +490,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/patel_jesalpura/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_webapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_webapp/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149">
+          <caret line="114" column="68" selection-start-line="114" selection-start-column="68" selection-end-line="114" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blogHome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="1048" column="74" lean-forward="true" selection-start-line="1048" selection-start-column="74" selection-end-line="1048" selection-end-column="74" />
+        <state relative-caret-position="75">
+          <caret line="1354" column="6" selection-start-line="1354" selection-start-column="6" selection-end-line="1354" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#6;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#legend#0;n#fieldset#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -514,10 +531,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blogDescription.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="617" column="20" selection-start-line="617" selection-start-column="20" selection-end-line="617" selection-end-column="20" />
+        <state relative-caret-position="317">
+          <caret line="1645" lean-forward="true" selection-start-line="1645" selection-end-line="1645" />
         </state>
       </provider>
     </entry>

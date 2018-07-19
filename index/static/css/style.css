@@ -8,16 +8,85 @@ margin-right:4px !important;
 
 }
 
+.main_team_container_class{
+height:160% !important;
+
+}
+.social_icon{
+margin-left:5% !important;
+}
+
+.share_div_class{
+margin-left:1% !important;
+    margin-top: 5%
+}
+
+.blogImage_class{
+width:100% !important;
+
+}
+.see_all_insight_class{
+    margin-left: 36% !important;
+    margin-top: 5.9% !important;
+
+}
 
 .message_btn_desktop{
 display:none;
 
 }
 
+#carousel{
+width:360px !important;
+height:570px !important;
+}
+
+.member_description_class{
+
+margin-top:55% !important;
+}
+
+.member_biodata_class{
+font-size:14px !important;
+}
+
+.member_image_class{
+    margin-top: -48% !important;
+    margin-left: -96% !important;
+}
+
+.legend_class_team{
+
+font-size:17px !important;
+}
+
 .mobile_col_5_class{
 
 margin-left: -17%;
 }
+.name_cross_blog_home_class{
+font-size:17px;
+}
+
+.blog_title_on_cover_image_class{
+margin-top:-140% !important;
+width:85% !important;
+
+}
+.blog_details_class{
+margin:0px !important;
+border-width:2px !important;
+}
+
+.blog_cover_image_class{
+margin-top:0px !important;
+}
+
+pre{
+font-size: 15px !important;
+}
+
+
 
 ms_mobile_class{
     width: 286% !important;
@@ -619,6 +688,11 @@ background-color: transparent;
 	height:390px;
 }
 
+.member_description_division_class::-webkit-scrollbar {
+background-color: transparent;
+
+}
+
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -1035,9 +1109,10 @@ pre{
 
 .blog_details_class{
 
-margin: 8% !important;
-margin-top:4% !important;
-margin-bottom:2% !important;
+margin-left: 8%;
+margin-right: 8%;
+margin-top:4%;
+margin-bottom:2%;
 background-color:white;
 border-color: #F0C181;
 	border-style:solid;
@@ -1143,7 +1218,7 @@ background: rgb(240,193,129,0.3);
 .member_image_class{
 width:17%;
 height: 31%;
-margin-top: -16% !important;
+margin-top: -16% ;
 
 }
 
@@ -1283,7 +1358,7 @@ font-family: 'Josefin Sans', sans-serif;
 }
 
 .social_icon{
-margin-left:-4% !important;
+margin-left:-4%;
 }
 
 .blog_title_on_cover_image_class{
@@ -1321,6 +1396,16 @@ body{
 
 
 }
+
+
+
+
+.member_description_division_class{
+    overflow-x: auto;
+height: 400px;
+
+    }
+
 
 .service_header{
 	font-size: 15px;
@@ -1383,7 +1468,6 @@ body{
 .hidden_team_bck_class{
 
 padding-bottom:2%;
-background: rgb(240,193,129,0.2);
 
 }
 
@@ -1427,7 +1511,8 @@ margin-left: 1%;
 
 
 .comment_division_class{
-
+margin:8%;
+margin-bottom:2% !important;
 padding:2%;
 }
 .team_class{
@@ -1517,6 +1602,8 @@ font-weight: normal !important;
 
 }
 
+
+
 .service_item:hover { color: black ; }
 
 @media screen and (max-width : 1920px){
@@ -1557,8 +1644,14 @@ footer{
 	font-family: 'Josefin Sans';
 }
 
-.comment_div_class{
+.disqus-footer__wrapper{
+display:none !important;
 
+}
+
+.comment_div_class{
+margin-left:5%;
+margin-right:5%;
 margin-top:1%;
 background-color:#f8f9fa;
 width:auto;
