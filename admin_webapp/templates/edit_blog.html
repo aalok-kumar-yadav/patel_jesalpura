@@ -11,6 +11,8 @@
     <!-- Bootstrap core CSS-->
     {% load static %}
 
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Custom fonts for this template-->
 
@@ -30,12 +32,18 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
 
+
+
+ <script src="{% static 'js/editor.js' %}"></script>
+
+    <link href="{% static 'css/editor.css' %}" type="text/css" rel="stylesheet"/>
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top" style="font-family: 'Josefin Sans' !important;">
   <!-- Navigation section-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="redirect_admin/"><b>Patel & Jesalpura</b></a>
+    <a class="navbar-brand" href="redirect_admin/" style="color: white !important"><b>Patel & Jesalpura</b></a>
 
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -45,7 +53,7 @@
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-              <a class="nav-link" href="redirect_admin/">
+              <a class="nav-link" href="redirect_admin/" style="color:white !important">
                 <!-- <i class="fa fa-fw fa-area-chart"></i> -->
                 <span class="nav-link-text" >Career</span>
               </a>
@@ -55,7 +63,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
           <a class="nav-link" href="redirect_blog/">
             <!-- <i class="fa fa-fw fa-dashboard"></i> -->
-            <span class="nav-link-text" style="color: white">Blog Post</span>
+            <span class="nav-link-text" style="color: white"><b>Blog Post</b></span>
           </a>
         </li>
 
@@ -101,9 +109,22 @@
 
     <div class = "form-group">
       <label><b>Description </b></label>
+
       <textarea type = "text" id="blogDescription_edit" name="blogDescription_edit" class="form-control" rows="8"
-      value=""> {{context.blogDescription}}</textarea>
+      value="" style="display:none"> {{context.blogDescription | safe }}</textarea>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 nopadding">
+                        <textarea type = "text" id="txtEditor"></textarea>
+
+                    </div>
+
+                </div>
+            </div>
+
     </div>
+
 
 
 
@@ -134,7 +155,7 @@
 
     </div>
 
-        <button id="editpost_id" class="btn btn-default" type="submit"  style="background-color:#006666; color:white;" value="UPDATE">UPDATE</button>
+        <button id="editpost_id" class="btn btn-default"  type="submit" onclick="function_editor();"  style="background-color:#006666; color:white;" value="UPDATE">UPDATE</button>
 
 
 
@@ -194,16 +215,28 @@
     </div>
 
 
-<script>
+
+
+        <script >
+            $(document).ready(function() {
+			$("#txtEditor").Editor();
+
+			var blog_des=document.getElementById("blogDescription_edit").value;
+            $("#txtEditor").Editor("setText",blog_des);
+			});
+
+			function function_editor(){
+
+	        var text = $("#txtEditor").Editor("getText");
+	        document.getElementById('blogDescription_edit').value = text;
+
+        }
 
 
 
-</script>
-
+        </script>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-
 
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <!-- Core plugin JavaScript-->
@@ -213,7 +246,7 @@
     <!-- Page level plugin JavaScript-->
 
 
-    <script src="{% static 'vendor/chart.js/Chart.min.js' %}"></script>
+    <!--<script src="{% static 'vendor/chart.js/Chart.min.js' %}"></script>-->
 
 
     <script src="{% static 'vendor/datatables/jquery.dataTables.js' %}"></script>
@@ -228,7 +261,7 @@
     <script src="{% static 'js/sb-admin-datatables.min.js' %}"></script>
 
 
-    <script src="{% static 'js/sb-admin-charts.min.js' %}"></script>
+    <!--<script src="{% static 'js/sb-admin-charts.min.js' %}"></script>-->
   </div>
   </div>
 </body>

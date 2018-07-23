@@ -15,7 +15,9 @@ padding-top:0;
 }
 
 
-
+a{
+color:black !important;
+}
 
 body {
   overflow-x: hidden;

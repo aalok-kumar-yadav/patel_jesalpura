@@ -1,7 +1,8 @@
+
 /*start of Media query for  screen resolution <= 400*/
 
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 320px) and (max-width: 400px) {
 
 #hidden_fieldset_id{
 margin-right:4px !important;
@@ -11,6 +12,10 @@ margin-right:4px !important;
 .main_team_container_class{
 height:160% !important;
 
+}
+
+.nav_item_list{
+font-size:13px !important;
 }
 .social_icon{
 margin-left:5% !important;
@@ -99,7 +104,7 @@ display: block !important;
 }
 
 .logo_class{
-font-size: 18px;
+font-size: 24px;
 }
 
 .msg_mobile_class{
@@ -126,7 +131,10 @@ width:240% !important;
 }
 
 
+.nav-active:after {
+	width: 13% !important;
 
+}
 
 
 .attach_resume_class{
@@ -176,17 +184,18 @@ width:75% !important;
     margin-bottom: 69px !important;
        margin-top: -54% !important;
     margin-left: 37% !important;
-
-
 }
+
 
 .service_crossicon_class{
 margin-left:93% !important;
 }
 
+
 .service_col_content{
 margin-left: 3%;
 }
+
 
 .service_list_class{
 margin-left:1%;
@@ -342,12 +351,364 @@ p{
 
 
 
-
-/*start of Media query for  screen resolution <= 400*/
-
+/*End of Media query for  screen resolution width<= 400*/
 
 
 
+
+/*start of Media query for  screen resolution width >= 400 and less then 500 */
+
+
+@media screen and (max-width: 501px) and (min-width: 401px) {
+
+#hidden_fieldset_id{
+margin-right:4px !important;
+
+}
+
+.main_team_container_class{
+height:160% !important;
+
+}
+
+.nav_item_list{
+font-size:13px !important;
+}
+.social_icon{
+margin-left:5% !important;
+}
+
+.share_div_class{
+margin-left:1% !important;
+    margin-top: 5%
+}
+
+.blogImage_class{
+width:100% !important;
+
+}
+.see_all_insight_class{
+    margin-left: 36% !important;
+    margin-top: 5.9% !important;
+
+}
+
+.message_btn_desktop{
+display:none;
+
+}
+
+#carousel{
+width:360px !important;
+height:570px !important;
+}
+
+.member_description_class{
+
+margin-top:55% !important;
+}
+
+.member_biodata_class{
+font-size:14px !important;
+}
+
+.member_image_class{
+    margin-top: -48% !important;
+    margin-left: -96% !important;
+}
+
+.legend_class_team{
+
+font-size:17px !important;
+}
+
+.mobile_col_5_class{
+
+margin-left: -17%;
+}
+.name_cross_blog_home_class{
+font-size:17px;
+}
+
+.blog_title_on_cover_image_class{
+margin-top:-140% !important;
+width:85% !important;
+
+}
+.blog_details_class{
+margin:0px !important;
+border-width:2px !important;
+}
+
+.blog_cover_image_class{
+margin-top:0px !important;
+}
+
+pre{
+font-size: 15px !important;
+}
+
+
+
+ms_mobile_class{
+    width: 286% !important;
+
+}
+
+.message_btn_mobile{
+display: block !important;
+
+}
+
+.logo_class{
+font-size: 24px;
+}
+
+.msg_mobile_class{
+width:286% !important;
+}
+
+.message_class_desktop{
+display:none;
+}
+
+.message_class_mobile{
+
+display: block !important;
+}
+
+
+.team_class{
+font-size: 17px !important;
+}
+
+.input_class{
+
+width:240% !important;
+}
+
+
+.nav-active:after {
+	width: 13% !important;
+
+}
+
+
+.attach_resume_class{
+
+width:150%;
+}
+
+.footer_company_name_class{
+font-size:16px;
+
+}
+
+.heart_image_class{
+width:20px !important;
+}
+
+.service_open_container{
+
+   margin-right: 0% !important;
+margin-bottom: 2.2% !important;
+
+}
+
+h5{
+font-size: 17px
+
+}
+
+.why_we_hire_class_mobile{
+display:block!important;
+}
+
+.why_we_hire_class_desktop{
+display:none;
+}
+
+.watermark_image_class{
+
+opacity:0.4;
+width:75% !important;
+}
+
+
+
+.hidden_service_icon_class{
+    position: absolute;
+    margin-bottom: 69px !important;
+       margin-top: -54% !important;
+    margin-left: 37% !important;
+}
+
+
+.service_crossicon_class{
+margin-left:93% !important;
+}
+
+
+.service_col_content{
+margin-left: 3%;
+}
+
+
+.service_list_class{
+margin-left:1%;
+}
+
+.service_col{
+
+margin-left: 10% !important;
+}
+
+.fieldset_class_service{
+margin-right:6% !important;
+margin-left:6% !important;
+}
+
+
+.legend_class_serv{
+	font-size: 16px !important;
+	margin-left: 70% !important;
+	vertical-align: center;
+
+}
+
+.career_class{
+font-size:16px !important;
+
+}
+
+h3{
+
+font-size: 17px;
+}
+
+.service_headline_normal{
+	font-size: 14px !important;
+
+}
+
+.blog_card_row_div_class{
+
+margin-left:0px !important;
+}
+
+.blog_container_div_class{
+padding:0px !important;
+}
+
+
+.input_class_file{
+    width: 200%;
+}
+
+.blog_view_card_div_class{
+margin-left:0px !important;
+margin-bottom: 14% !important;
+}
+
+.blog_card_div{
+
+width: 20.3rem !important;
+ height: 26rem !important;
+}
+
+.navbar_button{
+margin-left: -16px;
+}
+
+.service_header{
+	font-size: 10px !important;
+
+}
+
+.readmore_button_class{
+margin-left:0px !important;
+
+}
+.font_home_tit{
+font-size:13px !important;
+}
+
+h4{
+font-size:17px;
+}
+
+.service_item_row{
+	margin-top: 20px !important;
+}
+
+.images_ico{
+	width: 67% !important;
+}
+
+.about_tagline_class{
+
+font-size: 13px !important;
+}
+
+.legend_class_tagline_class{
+	font-size: 20px !important;
+}
+
+.home_image_class{
+height: 610px !important;
+}
+
+.cover_image_class{
+    width: 102% !important;
+    height: 450px !important;
+
+}
+
+.blank_border{
+	border-color: green;
+	border-style: solid;
+	background-color: green;
+}
+
+.submit_button_class{
+	max-width: 100px !important;
+}
+
+.tagline_content{
+    	font-size: 7px;
+    }
+
+.carousel-caption{
+	    top:30% !important;
+	 right: 5%;
+     left: 5%;
+}
+
+.navbar_class{
+	right: -16px !important;
+}
+
+.toggle_div_class{
+	margin-top: 20% !important;
+
+}
+
+.toggle_image_class{
+	max-width: 30px !important;
+	max-height: 30px !important;
+}
+
+
+p{
+	font-size: 13px;
+}
+
+
+}
+
+
+
+/*End of Media query for  screen resolution width<= 400*/
 
 .callout {
                 position: relative;
@@ -545,15 +906,6 @@ p{
 
 /* end of team slider css */
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
-    .tagline_content{
-    	font-size: 10px;
-    }
-
-    .carousel-caption{
-	    top: 14% !important;
-}
-}  
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
     .tagline_content{
@@ -1083,7 +1435,7 @@ background-color: #F0C181;
 margin:2%;
 background-color:#d2a971;
 box-shadow: none !important;
-
+height:8%;
 }
 
 .blogImage_class{
@@ -1232,7 +1584,7 @@ margin-top: -16% ;
 	max-height: 130% !important;
 }
 .member_item{
-	background-color: white;
+
 	   
   padding: 1.8% !important;
     
@@ -1647,6 +1999,22 @@ footer{
 .disqus-footer__wrapper{
 display:none !important;
 
+}
+
+.right_arrow_icon_class{
+    width: 50px;
+    height: 50px;
+    margin-top: -16%;
+       margin-left: 969px;
+}
+
+
+.left_arrow_icon_class{
+
+   width: 50px;
+    height: 50px;
+    margin-top: -16%;
+        margin-left:12px;
 }
 
 .comment_div_class{

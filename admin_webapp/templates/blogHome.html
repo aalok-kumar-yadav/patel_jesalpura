@@ -88,7 +88,7 @@
                         <div class="card-body">
                             <img class="card-img-top" src="{{i.blogImage}}" alt="Card image cap">
                             <h5 class="card-title" style="margin-top:15px !important"><b>{{i.blogTitle}}</b></h5>
-                            <p class="card-text">{{i.blogDescription}}</p>
+                            <p class="card-text">{{i.blogDescription | safe}}</p>
                             <a id="{{i.blogId}}" onclick="blog_description(this.id);" class="btn readmore_button_class">Read
                                 More</a>
                         </div>
