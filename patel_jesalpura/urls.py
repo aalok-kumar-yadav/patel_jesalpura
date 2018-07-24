@@ -44,6 +44,7 @@ urlpatterns = [
     url(r'^admin_page/candidate_details/redirect_to_blog/', views.redirect_to_blog, name="redirect_blog"),
     url(r'^admin_page/blog/change_blog_status/(?P<number>[0-9]+)$', views.blog_status, name="blog_status"),
     url(r'^admin_page/candidate_details/view_resume/(?P<phone_number>[0-9]+)$', views.pdf_viewer, name="pdf_view"),
-    url(r'^blog_description/comment/(?P<blog_id>[0-9]+)$', views.add_comment, name = "add_comment"),
+    url(r'^blog_description/comment/(?P<blog_id>[0-9]+)$', views.add_comment, name="add_comment"),
+    url(r'^admin_page/blog/get_blog_description/(?P<blog_id>[0-9]+)$', views.get_blog_description, name="get_blog_description"),
 
 ]

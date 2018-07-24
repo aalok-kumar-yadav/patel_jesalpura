@@ -3,6 +3,7 @@ from django.shortcuts import render
 from admin_webapp.models import Resume_class, SessionClass, BlogPostClass
 from index.models import CommentClass
 from django.shortcuts import redirect
+from django.http import HttpResponse
 
 auth_error = "True"
 
@@ -140,7 +141,7 @@ def addpost_view(request):
 
     post_object.blogDescription = request.POST.get("blogDescription")
 
-    post_object.blogPostDateTime = datetime.datetime.fromtimestamp(time.time()).strftime(' %H:%M:%S %d-%m-%Y')
+    post_object.blogPostDateTime = datetime.datetime.fromtimestamp(time.time()).strftime('%H:%M:%S %d-%m-%Y')
 
     img = request.FILES['blogImage']
     var = base64.b64encode(img.read())
@@ -165,7 +166,6 @@ def deletepost_view(request, blog_id):
 def blogHome_view(request):
 
     blogpost_obj = BlogPostClass.objects.all()
-
     blog_list = []
 
     for obj in blogpost_obj:
@@ -199,7 +199,6 @@ def blogDescription_view(request, blog_id):
             comment_class_obj.commentDate = c_obj.commentDate
             comment_list.append(comment_class_obj)
 
-
     context = {'blogId': blog_id, 'blogTitle': blog_obj.blogTitle, 'blogDescription':
         blog_obj.blogDescription, 'blogImage': blg_image, 'coverImage': cv_image, 'blogPostDateTime': blog_obj.blogPostDateTime,
                'comment_list': comment_list}
@@ -223,7 +222,7 @@ def update_blog_entry_view(request, blog_id):
     blog_obj = BlogPostClass.objects.get(blogId=blog_id)
     new_title = request.POST.get("blogTitle_edit")
     new_description = request.POST.get("blogDescription_edit")
-    new_datetime = datetime.datetime.fromtimestamp(time.time()).strftime(' %H:%M:%S %d-%m-%Y')
+    new_datetime = datetime.datetime.fromtimestamp(time.time()).strftime('%H:%M:%S %d-%m-%Y')
 
     blg_image = blog_obj.blogImage
     cv_image = blog_obj.blogCoverImage
@@ -243,7 +242,6 @@ def update_blog_entry_view(request, blog_id):
     temp_obj.blogDescription = new_description
     temp_obj.blogImage = blg_image
     temp_obj.blogCoverImage = cv_image
-
     temp_obj.save()
     return redirect('blog_view')
 
@@ -277,3 +275,8 @@ def add_comment(request, blog_id):
 
         return redirect('blogDescription_view', blog_id)
 
+
+def get_blog_description(request, blog_id):
+
+    blog_obj = BlogPostClass.objects.get(blogId=blog_id)
+    return HttpResponse(blog_obj.blogDescription)
