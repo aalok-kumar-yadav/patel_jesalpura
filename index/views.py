@@ -8,7 +8,6 @@ def home(request):
     blogpost_obj = BlogPostClass.objects.all()
     session_obj = SessionClass.objects.get(admin_email="alokyadav@cosaia.com")
     blog_list = []
-
     dateList = []
 
     for object in blogpost_obj:
@@ -16,12 +15,11 @@ def home(request):
 
     sorted_datetime_list = sorted(dateList, key=lambda x: datetime.datetime.strptime(x, '%H:%M:%S %d-%m-%Y'))
     count = 1
-
-
-    while count <= 6:
+    length_list = len(sorted_datetime_list)
+    while count <= 6 and count <= length_list:
         for obj in blogpost_obj:
 
-            if sorted_datetime_list[len(sorted_datetime_list)-count] == obj.blogPostDateTime:
+            if sorted_datetime_list[-count] == obj.blogPostDateTime:
                 temp_obj = BlogPostClass()
                 temp_obj.blogId = obj.blogId
                 temp_obj.blogTitle = obj.blogTitle
@@ -30,8 +28,6 @@ def home(request):
                 temp_obj.blogDescription = temp[:88] + "...."
                 temp_obj.blogImage = "data:image/png;base64," + obj.blogImage
                 blog_list.append(temp_obj)
-                print("i invoked for")
-                print(obj.blogPostDateTime)
         count = count+1
 
     context = {'blog_list': blog_list, 'blog_status': session_obj.blog_status}
