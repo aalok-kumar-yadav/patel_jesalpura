@@ -21,6 +21,6 @@ class BlogPostClass(models.Model):  # BlogPost class and their attribute
     blogTitle = models.CharField(max_length=300)
     blogDescription = models.CharField(max_length=100000)
     blogPostDateTime = models.CharField(max_length=50)
-    blogCoverImage = models.CharField(blank=True, max_length=1000000)
-    blogImage = models.CharField(blank=True, max_length=1000000)
+    blogCoverImage = models.CharField(blank=True, max_length=100000000)
+    blogImage = models.CharField(blank=True, max_length=100000000)
 
