@@ -31,6 +31,7 @@ urlpatterns = [
     url(r'^login/authentication/$', views.authentication, name="authentication_view"),
     url(r'^admin_page/logout', views.logout_view, name="logout_view"),
     url(r'^admin_page/blog/logout', views.logout_view, name="logout_view"),
+    url(r'admin_page/candidate_details/logout',views.logout_view,name="logout_view"),
     url(r'redirect_admin/', views.redirect_admin_view, name="redirect_admin"),
     url(r'^admin_page/blog/addPost/', views.addpost_view, name="addpost_view"),
     url(r'^blog_description/bloghome$', views.blogHome_view, name="blogHome_view"),

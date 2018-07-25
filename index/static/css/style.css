@@ -1,4 +1,80 @@
 
+
+/* Start of Media Query for screen resolution <=720 */
+
+@media screen and (max-width: 768px) {
+.carousel-caption{
+  top: 45% !important;
+	 right: 3%;
+     left: 3%;
+
+}
+
+.home_image_class{
+    height: 645px !important;
+}
+
+.blog_view_card_div_class{
+margin-right: 16%;
+}
+
+.blog_card_div {
+    width: 18rem !important;
+
+    }
+
+    .card-img-top {
+    height: 180px !important;
+}
+
+.legend_class_serv{
+font-size:20px !important
+}
+
+.career_class{
+font-size:20px !important
+}
+
+.team_class{
+font-size:20px !important
+}
+h3{
+font-size:20px !important;
+}
+h4{
+font-size:20px !important;
+}
+
+.legend_class_team{
+font-size:20px !important;
+}
+
+.member_description_class {
+    background-color: white;
+    position: absolute;
+    margin-top: 24% !important;
+
+    }
+
+.member_image_class {
+    margin-top: -25% !important;
+
+    }
+
+.team_crossicon_class {
+
+    margin-left: 92.7% !important;
+    margin-top: -5.4% !important;
+
+    }
+
+}
+
+
+/* End of Media Query for screen resolution <=720 */
+
+
+
 /*start of Media query for  screen resolution <= 400*/
 
 
@@ -57,7 +133,7 @@ font-size:14px !important;
 
 .member_image_class{
     margin-top: -48% !important;
-    margin-left: -96% !important;
+
 }
 
 .legend_class_team{
@@ -414,7 +490,8 @@ font-size:14px !important;
 
 .member_image_class{
     margin-top: -48% !important;
-    margin-left: -96% !important;
+
+
 }
 
 .legend_class_team{
@@ -907,33 +984,8 @@ p{
 /* end of team slider css */
 
 
-@media screen and (min-width: 600px) and (max-width: 800px) {
-    .tagline_content{
-    	font-size: 14px;
-    }
 
-    .carousel-caption{
-	    top: 13% !important;
-}
-}  
 
-@media screen and (min-width: 850px) and (max-width: 1000px) {
-    .tagline_content{
-    	font-size: 15px;
-    }
-
-    .menu_style{
-    	width: 80% !important;
-    }
-
-    .navbar_button{
-    	    margin-left: 50%;
-    }
-
-    .carousel-caption{
-	    top: 14% !important;
-}
-}
 .button_custom{
 	width: 10px;
 	height:50px;
@@ -1004,6 +1056,10 @@ padding-bottom: 0.1%;
  
 }
 
+.blog_card_row_div_class{
+margin-left:0px;
+
+}
 
 .service_crossicon_class{
 
