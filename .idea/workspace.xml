@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2942c1b-f789-4211-a3f8-8db7c7d44017" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/index/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,20 +28,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
-              <caret line="1110" column="23" lean-forward="true" selection-start-line="1110" selection-start-column="23" selection-end-line="1110" selection-end-column="23" />
+            <state relative-caret-position="255">
+              <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blogDescription.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blogDescription.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="62" column="64" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="214">
-              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+              <caret line="734" column="22" selection-start-line="734" selection-start-column="22" selection-end-line="734" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -54,11 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>blog_card</find>
-      <find>footer_co</find>
-      <find>carouse</find>
-      <find>home_im</find>
-      <find>nav_ite</find>
       <find>member_</find>
       <find>member_it</find>
       <find>navH</find>
@@ -82,8 +89,13 @@
       <find>alok</find>
       <find>member_description_division_class</find>
       <find>webkit-scrollbar</find>
-      <find>Duis autem vel euHirel Patel</find>
       <find>member_ima</find>
+      <find>blog_cover</find>
+      <find>.team_close_icon_class</find>
+      <find>200px</find>
+      <find>footer</find>
+      <find>Duis autem vel euHirel Patel</find>
+      <find>navbar_button</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -108,7 +120,6 @@
         <option value="$PROJECT_DIR$/admin_webapp/admin.py" />
         <option value="$PROJECT_DIR$/index/models.py" />
         <option value="$PROJECT_DIR$/admin_webapp/templates/login.html" />
-        <option value="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" />
         <option value="$PROJECT_DIR$/admin_webapp/templates/blogHome.html" />
         <option value="$PROJECT_DIR$/index/static/css/navHighlighterStyle.css" />
         <option value="$PROJECT_DIR$/patel_jesalpura/production_setting.py" />
@@ -123,8 +134,9 @@
         <option value="$PROJECT_DIR$/index/static/css/sb-admin.css" />
         <option value="$PROJECT_DIR$/admin_webapp/views.py" />
         <option value="$PROJECT_DIR$/index/static/js/jquery.waterwheelCarousel.js" />
-        <option value="$PROJECT_DIR$/index/templates/index.html" />
+        <option value="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" />
         <option value="$PROJECT_DIR$/index/static/css/style.css" />
+        <option value="$PROJECT_DIR$/index/templates/index.html" />
       </list>
     </option>
   </component>
@@ -147,6 +159,17 @@
             <path>
               <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
               <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
+              <item name="admin_webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
@@ -381,13 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blogDescription.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blogHome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
@@ -534,17 +550,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/admin_webapp/templates/blogDescription.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="1110" column="23" lean-forward="true" selection-start-line="1110" selection-start-column="23" selection-end-line="1110" selection-end-column="23" />
+        <state relative-caret-position="148">
+          <caret line="62" column="64" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+          <caret line="734" column="22" selection-start-line="734" selection-start-column="22" selection-end-line="734" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
         </state>
       </provider>
     </entry>
