@@ -732,7 +732,7 @@ width: 20.3rem !important;
 
 .navbar_button{
 margin-left: -16px;
-outline:0px !important;
+
 }
 
 .service_header{
@@ -1106,6 +1106,10 @@ margin-left:0px;
 	margin-top: -29px ;
 
 
+}
+
+.navbar_button{
+outline:0px !important;
 }
 
 .team_crossicon_class{
