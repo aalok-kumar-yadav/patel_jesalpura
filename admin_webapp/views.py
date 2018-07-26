@@ -24,6 +24,9 @@ def admin_view(request):
         aspirant_list.append(resume_obj)
 
     session_obj = SessionClass.objects.get()
+
+    print(aspirant_list[0].name)
+
     if session_obj.login_status == "True":
         return render(request, 'home.html', {'aspirant_list': aspirant_list})
     else:

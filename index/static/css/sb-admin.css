@@ -553,3 +553,12 @@ color:blue !important;
  cursor: pointer;
 
 }
+
+pre{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}

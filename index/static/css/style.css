@@ -127,6 +127,21 @@ height:570px !important;
 margin-top:55% !important;
 }
 
+.team_crossicon_class {
+    margin-left: 87.7% !important;
+    margin-top: -9.4% !important;
+
+    }
+
+    .footer {
+    margin-bottom: 0px !important;
+    }
+
+    .right_arrow_icon_class {
+
+    margin-left: 285px !important;
+    }
+
 .member_biodata_class{
 font-size:14px !important;
 }
@@ -180,7 +195,7 @@ display: block !important;
 }
 
 .logo_class{
-font-size: 24px;
+font-size: 24px !important;
 }
 
 .msg_mobile_class{
@@ -353,7 +368,7 @@ font-size:13px !important;
 }
 
 h4{
-font-size:17px;
+font-size:17px !important;
 }
 
 .service_item_row{
@@ -1096,10 +1111,7 @@ background-color: transparent;
 	height:390px;
 }
 
-.member_description_division_class::-webkit-scrollbar {
-background-color: transparent;
 
-}
 
 
 /* Handle */
@@ -1810,9 +1822,14 @@ body{
 
 .member_description_division_class{
     overflow-x: auto;
-height: 400px;
+height: 200px;
 
     }
+
+    .member_description_division_class::-webkit-scrollbar {
+background-color: transparent;
+
+}
 
 
 .service_header{
