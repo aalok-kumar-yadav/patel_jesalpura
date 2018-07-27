@@ -136,8 +136,11 @@ def add_post_view(request):
 
     post_object = BlogPostClass()               # Creating Required DB Instance
     total_row = BlogPostClass.objects.all().count()
+    if total_row == 0:
+        post_object.blogId = 1
+    else:
+        post_object.blogId=BlogPostClass.objects.all().order_by("-id")[0].blogId+1
 
-    post_object.blogId = total_row + 1
     post_object.blogTitle = request.POST.get("blogTitle")       # Assigning Value Into Variable
 
     post_object.blogDescription = request.POST.get("blogDescription")

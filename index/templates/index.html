@@ -1,6 +1,4 @@
-<!-- Patel And Jesalpura Website By Alok Kumar Yadav--->
-
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -17,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/navHighlighterStyle.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Josefin+Slab:300,300i,400,600i,700,700i"
           rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
@@ -1418,52 +1417,56 @@
             <div class="container message_container">
                 <h4 style="text-align: center;"><b>Contact Us</b></h4>
 
-                <form id="gform" data-email="alokyadav495@gmail.com"
-                      class="row form-group justify-content-around inside_message_container"
+                <form novalidate id="gform" data-email="alokyadav495@gmail.com"
+                      class="form-group justify-content-around inside_message_container"
                       method="POST"
                       action="https://script.google.com/macros/s/AKfycbzzJfHtAASnzU7IrI5w9M9x9xLR00VXeRe8Ge9xXQmtw0eAhKuJ/exec">
 
-                    <div class="col-5 mobile_col_5_class">
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control  msg_mobile_class" id="name" name="name" required>
+                            <br>
 
-                        <label for="name">Name</label>
-                        <input type="name" class="form-control  msg_mobile_class" id="name" name="name" required>
-                        <br>
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control  msg_mobile_class" id="email" name="email" required>
+                            <br>
 
-                        <label for="Email">Email</label>
-                        <input type="Email" class="form-control  msg_mobile_class" id="email" name="email" required>
-                        <br>
-
-                        <label>Subject</label>
-                        <br>
-                        <input type="text" id="subject" class=" form-control  msg_mobile_class" name="subject" required>
-
-                        <div class="message_class_mobile">
-                            <label>Message</label>
-                            <textarea rows="5" name="message" cols="40" class="form-control  msg_mobile_class"
-                                      required></textarea>
+                            <label>Subject</label>
+                            <br>
+                            <input type="text" id="subject" class=" form-control  msg_mobile_class" name="subject" required>
                         </div>
-                        <br>
 
-                        <button id="contact_button_moblie" type="submit"
-                                class="btn  submit_button_class message_btn_mobile">Submit
-                        </button>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="">
+                                <label>Message</label>
+                                <textarea rows="6" name="message" cols="40" class="form-control  msg_mobile_class"
+                                          required></textarea>
+                            </div>
+                            <br>
+                            
+
+                            <button id="contact_button_moblie" type="submit"
+                                    class="btn  submit_button_class ">Submit
+                            </button>
+                        </div>
 
                     </div>
 
 
-                    <div class="col-5 message_class_desktop">
-                        <label>Message</label>
+                    <!--<div class="col-5 message_class_desktop">-->
+                        <!--<label>Message</label>-->
 
-                        <textarea rows="9" name="message" cols="40" class="form-control input_class"
-                                  required></textarea>
-                    </div>
+                        <!--<textarea rows="9" name="message" cols="40" class="form-control input_class"-->
+                                  <!--required></textarea>-->
+                    <!--</div>-->
 
 
-                    <div class="message_submit_button_div_class">
-                        <button id="contact_button" type="submit" class="btn  submit_button_class message_btn_desktop">
-                            Submit
-                        </button>
-                    </div>
+                    <!--<div class="message_submit_button_div_class">-->
+                        <!--<button id="contact_button" type="submit" class="btn  submit_button_class message_btn_desktop">-->
+                            <!--Submit-->
+                        <!--</button>-->
+                    <!--</div>-->
 
                 </form>
 
@@ -1511,3 +1514,4 @@
 </html>
 
 <!--- End Of Html Tag --->
+<!-- Patel And Jesalpura Website By Alok Kumar Yadav -->

@@ -128,7 +128,7 @@ ms_mobile_class{
 }
 
 .msg_mobile_class{
-    width:286% !important;
+
 }
 
 .message_class_desktop{
@@ -162,14 +162,12 @@ ms_mobile_class{
 }
 
 .footer_company_name_class{
-    font-size:15px;
+    font-size:14px;
 }
 
 .heart_image_class{
     width:20px !important;
 }
-
-
 
 .service_open_container{
 
@@ -566,7 +564,7 @@ ms_mobile_class{
 }
 
 .msg_mobile_class{
-    width:286% !important;
+
 }
 
 .message_class_desktop{
@@ -2020,4 +2018,3 @@ footer
         .jssora073:hover {opacity:.8;}
         .jssora073.jssora073dn {opacity:.4;}
         .jssora073.jssora073ds {opacity:.3;pointer-events:none;}
-
