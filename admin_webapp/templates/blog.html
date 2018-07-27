@@ -1,58 +1,57 @@
+<!--  Admin Blog Page --->
+
 <!DOCTYPE html>
 <html lang="en">
 
-
+<!--- Start Of Head Tag --->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Admin Panel</title>
-    <!-- Bootstrap core CSS-->
+    <title>Blog</title>
     {% load static %}
 
-     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
     <!-- Custom fonts for this template-->
 
     <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
     <!-- Page level plugin CSS-->
 
     <link href="{% static 'vendor/datatables/dataTables.bootstrap4.css' %}" rel="stylesheet">
+
     <!-- Custom styles for this template-->
 
     <link href="{% static 'css/sb-admin.css' %}" rel="stylesheet">
-
-
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Josefin+Slab:300,300i,400,600i,700,700i"
           rel="stylesheet">
-
-    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet"> -->
-
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">-->
 
     <script src="{% static 'js/editor.js' %}"></script>
+    <script src="{% static 'js/admin_app.js' %}"></script>
     <link href="{% static 'css/editor.css' %}" type="text/css" rel="stylesheet"/>
 
 </head>
 
+<!--- End Of Head Tag --->
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top" style="font-family: 'Josefin Sans' !important;">
+
 <!-- Navigation section-->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="redirect_admin/" style="color:white !important"><b>Patel & Jesalpura</b></a>
 
+    <a class="navbar-brand" href="redirect_admin/" style="color:white !important"><b>Patel & Jesalpura</b></a>
 
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
             aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
@@ -72,9 +71,7 @@
                 </a>
             </li>
 
-
         </ul>
-
 
         <ul class="navbar-nav ml-auto">
 
@@ -82,24 +79,26 @@
                 <a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="color: white !important">
                     <i class="fa fa-fw fa-sign-out"></i> Logout</a>
             </li>
-        </ul>
 
+        </ul>
 
     </div>
 </nav>
 
 
+<!--- Blog Status, Add Blog Section --->
+
+
 <div class="content-wrapper">
     <div class="container-fluid">
+
         <!-- Breadcrumbs-->
 
         <ol class="breadcrumb">
-
-
             <li class="breadcrumb-item active" style="margin-top:1%"><b>Blog-Status</b></li>
 
-
             {% ifequal context.blog_status "True" %}
+
             <a href="change_blog_status/0" style="margin-left:8%">
                 <button class="btn " style=";background-color:#1e7e34; color:white">ENABLED</button>
             </a>
@@ -108,17 +107,19 @@
 
 
             {% ifequal context.blog_status "False" %}
+
             <a href="change_blog_status/1" style="margin-left:8%">
                 <button class="btn " style="background-color:#600f06; color:white">DISABLED</button>
             </a>
 
             {% endifequal %}
 
-
             <input type="submit" class="btn " onclick="show_addpost_division();return false"
                    style="margin-left:50%;background-color:#006666; color:white" value="ADD POST">
         </ol>
 
+
+        <!--- Form For Adding Blog Post --->
 
         <form class="addpost_class" method="post" action="addPost/" enctype="multipart/form-data">
             {% csrf_token %}
@@ -129,34 +130,25 @@
             </div>
 
 
-            <!--<div class="form-group">-->
-
-
-
-            <!--</div>-->
-
             <label><b>Description </b></label>
-            <textarea type="text" id="blogDescription"  name="blogDescription" class="form-control"
-                       rows="70" style="display:none" ></textarea>
-
+            <textarea type="text" id="blogDescription" name="blogDescription" class="form-control"
+                      rows="70" style="display:none"></textarea>
 
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 nopadding">
-                        <textarea id="txtEditor" ></textarea>
-
+                        <textarea id="txtEditor"></textarea>
                     </div>
-
                 </div>
             </div>
 
 
             <div class="form-group row content-justify-around">
+
                 <div class=" col-6">
                     <label><b>Cover Image: </b> *</label><br>
                     <input type="file" id="coverImage" name="coverImage" class="form-control" style="max-width: 70%">
                 </div>
-
 
                 <div class=" col-6">
                     <label><b>Blog Image: </b> *</label><br>
@@ -164,27 +156,34 @@
                 </div>
 
             </div>
-
             <br>
+
             <input id="addpost_id" type="submit" onclick="function_editor();" class="btn"
                    style="background-color: #006666;color:white" bac
                    value="POST">
+
         </form>
 
 
-        <!-- End of add blog post --->
+        <!-- End Of Add Post Division --->
+
 
 
         <!---  Start Table view of Blog  --->
 
 
         <div class="card mb-3" style="margin-top:2%">
+
             <div class="card-header">
                 <i class="fa fa-table"></i>All Blogs
             </div>
+
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
+                        <!--- Table Header For Blog --->
+
                         <thead>
                         <tr>
                             <th style="width:25%">Title</th>
@@ -195,16 +194,20 @@
                         </tr>
                         </thead>
 
+                        <!--- Loop For Getting All Blog List --->
 
                         <tbody>
-
                         {% for blog in context.blog_list %}
 
                         <tr>
+
                             <td>{{blog.blogTitle}}</td>
                             <td>{{blog.blogPostDateTime}}</td>
-                            <td>{{blog.blogDescription | safe }}  <a id="des_{{blog.blogId}}" class="show_blog_desc" onclick="function_display_des(this.id);return false">Read Blog</a></td>
+                            <td>{{blog.blogDescription | safe | slice:":90" }} <a id="des_{{blog.blogId}}" class="show_blog_desc"
+                                                                    onclick="function_display_des(this.id);return false">Read
+                                Blog</a></td>
 
+                            <!-- Edit Blog Column --->
 
                             <td>
                                 <button id="ed_blog_id" class="btn edit_button_class"
@@ -215,6 +218,7 @@
                                 </button>
                             </td>
 
+                            <!--- Delete Blog Column --->
 
                             <td>
                                 <button class="btn " style="background-color:white !important;">
@@ -230,31 +234,29 @@
 
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
 
+
+        <!---  End Of Blog View Section  --->
+
+
+        <!-- The Modal For Reading Blog Description Alone -->
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content blog_description_model_class">
+                <span class="close close_blog_des_class">&times;</span>
+                <div id="display_blog_des">
+                    Alok
                 </div>
             </div>
 
         </div>
 
 
-        <!---  End Table view of Blog  --->
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content blog_description_model_class">
-    <span class="close close_blog_des_class">&times;</span>
-    <div id="display_blog_des">
-        Alok
-    </div>
-  </div>
-
-</div>
-
-        <!-- /.container-fluid-->
         <!-- /.content-wrapper-->
-
 
         <footer class="sticky-footer">
             <div class="container">
@@ -272,12 +274,14 @@
         </a>
 
 
-        <!-- Logout Modal-->
+        <!-- Logout Modal -->
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
+
                 <div class="modal-content">
+
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -287,100 +291,43 @@
 
 
                     <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                         <a class="btn btn-primary" href="logout">Logout</a>
                     </div>
+
                 </div>
+
             </div>
         </div>
 
 
+        <!--- Script For Viewing Blog Description In Admin --->
+
         <script>
-            function show_addpost_division(){
 
-                 $(".addpost_class").show();
-
-            }
-
-
-
-
-             $("#addpost_id").click(function(){
-              /*$(".addpost_class").hide(); */
-          });
-
-
-        function change_blog_view_status()
-        {
-
-        $.ajax({url: "redirect_admin/", success: function(result){
-        }});
-
-        }
-
-
-        function function_editor(){
-
-	        var text = $("#txtEditor").Editor("getText");
-
-	        document.getElementById('blogDescription').value = text;
-
-        }
-
-            $(document).ready(function() {
-			$("#txtEditor").Editor();
-
-			});
-
-
-
-        </script>
-
-
-
-
-
-<script>
 // Get the modal
+
 var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-<!--var btn = document.getElementById("myBtn");-->
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
-<!--btn.onclick = function() {-->
-    <!--modal.style.display = "block";-->
-<!--}-->
-
-
 // When the user clicks on <span> (x), close the modal
+
 span.onclick = function() {
     modal.style.display = "none";
 }
 
+
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+
+window.onclick = function(event)
+{
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
-</script>
-
-
-        <script>
-    function function_display_des(description){
-    link = "get_blog_description/"+description.substring(4,5)
-$.ajax({url: link, success: function(result){
-modal.style.display = "block";
-document.getElementById("display_blog_des").innerHTML = result;
-
-                }});
-    }
-
 
 
 
@@ -389,17 +336,13 @@ document.getElementById("display_blog_des").innerHTML = result;
         <!-- Bootstrap core JavaScript-->
 
 
-
         <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
         <!-- Core plugin JavaScript-->
-
 
         <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
         <!-- Page level plugin JavaScript-->
 
-
         <script src="{% static 'vendor/datatables/jquery.dataTables.js' %}"></script>
-
 
         <script src="{% static 'vendor/datatables/dataTables.bootstrap4.js' %}"></script>
         <!-- Custom scripts for all pages-->
@@ -413,4 +356,8 @@ document.getElementById("display_blog_des").innerHTML = result;
 </div>
 </body>
 
+<!--- End Of Blog Page Body Tag --->
+
 </html>
+
+<!--- End Of Blog Page Html Tag --->

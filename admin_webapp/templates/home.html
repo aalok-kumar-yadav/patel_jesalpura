@@ -1,5 +1,9 @@
+<!--- Home Page Of Admin --->
+
 <!DOCTYPE html>
 <html lang="en">
+
+<!--- Start Of Head Tag --->
 
 <head>
     <meta charset="utf-8">
@@ -14,7 +18,6 @@
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Custom fonts for this template-->
 
-
     <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <!-- Page level plugin CSS-->
 
@@ -24,193 +27,205 @@
     <link href="{% static 'css/sb-admin.css' %}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/navHighlighterStyle.css' %}">
 
-
-		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet">
-
-		<!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Josefin+Slab:300,300i,400,600i,700,700i"
+          rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
 
-
 </head>
 
-<body class="fixed-nav sticky-footer bg-dark" id="page-top" style="font-family: 'Josefin Sans' !important;">
-  <!-- Navigation section-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top admin_logo" id="mainNav">
-    <a class="navbar-brand" href="redirect_admin/" style="color:white !important"><b > Patel & Jesalpura </b></a>
+<!--- End Of Head Tag --->
 
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top" style="font-family: 'Josefin Sans' !important;">
+
+<!-- Navigation section-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top admin_logo" id="mainNav">
+
+    <a class="navbar-brand" href="redirect_admin/" style="color:white !important"><b> Patel & Jesalpura </b></a>
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-              <a class="nav-link" href=""  style="color:white !important">
-                <!-- <i class="fa fa-fw fa-area-chart"></i> -->
-                <span class="nav-link-text " ><b> Career </b></span>
-              </a>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+                <a class="nav-link" href="" style="color:white !important">
+                    <!-- <i class="fa fa-fw fa-area-chart"></i> -->
+                    <span class="nav-link-text "><b> Career </b></span>
+                </a>
             </li>
 
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="blog" style="color:white !important">
-            <!-- <i class="fa fa-fw fa-dashboard"></i> -->
-            <span class="nav-link-text">Blog Post</span>
-          </a>
-        </li>
-            
-      </ul>
-      
-      <ul class="navbar-nav ml-auto">
-        
-        <li class="nav-item">
-          <a  class="nav-link" data-toggle="modal" data-target="#exampleModal" style="color:white !important">
-            <i class="fa fa-fw fa-sign-out"></i>  Logout   </a>
-        </li>
-      </ul>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                <a class="nav-link" href="blog" style="color:white !important">
+                    <!-- <i class="fa fa-fw fa-dashboard"></i> -->
+                    <span class="nav-link-text">Blog Post</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="color:white !important">
+                    <i class="fa fa-fw fa-sign-out"></i> Logout </a>
+            </li>
+        </ul>
 
     </div>
-  </nav>
+</nav>
 
+<!--- Candidate Header Division --->
 
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <div class="container-fluid">
-      <!-- Breadcrumbs-->
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="">Career</a>
-        </li>
-        <li class="breadcrumb-item active">Candidate</li>
-      </ol>
-     
-
-      <!-- Example DataTables Card-->
-      <div class="card mb-3">
-        <div class="card-header">
-          <i class="fa fa-table"></i> Candidate List</div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-              <thead>
-                <tr>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Email</th>
-              <th>Why We Hire You</th>
-                <th>Resume</th>
-          </tr>
-
-              </thead>
-              
-              <tbody>
-               {% for asp in aspirant_list %}
-    <tr>
-             <td>{{asp.name}}</td>
-           <td>{{asp.phone}}</td>
-           <td>{{asp.email}}</td>
-              <td><span class="teaser">{{asp.whywehire_message}}</span>
-
-                  {% if asp.whywehire_message %}
-                    <a href="candidate_details/{{asp.phone}}" style="color:blue !important">.....Read more</a>
-                    {% else %}
-                  <p>No Message</p>
-
-                  {% endif  %}
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="">Career</a>
+            </li>
+            <li class="breadcrumb-item active">Candidate</li>
+        </ol>
 
 
+        <!-- LIst Of All Candidate -->
 
+        <div class="card mb-3">
 
-              </td>
-              <td><a href="view_resume/{{asp.phone}}" target="_blank" style="color: blue !important">{{asp.name}}.pdf</a></td>
+            <div class="card-header">
+                <i class="fa fa-table"></i> Candidate List
+            </div>
 
-           </tr>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 
-  {% endfor %}
-                           
-              </tbody>
-            </table>
-          </div>
+                        <!--- Head Of Table --->
+
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Why We Hire You</th>
+                            <th>Resume</th>
+                        </tr>
+                        </thead>
+
+                        <!--- Body Of Candidate Table --->
+
+                        <tbody>
+
+                        <!--- Loop For getting All Candidate List --->
+
+                        {% for asp in aspirant_list %}
+                        <tr>
+
+                            <td>{{asp.name}}</td>
+                            <td>{{asp.phone}}</td>
+                            <td>{{asp.email}}</td>
+
+                            <td><span class="teaser">{{asp.whywehire_message | slice:":90"}}</span>
+
+                                <!-- Condition For Message --->
+
+                                {% if asp.whywehire_message %}
+                                <a href="candidate_details/{{asp.phone}}" style="color:blue !important">.....Read
+                                    more</a>
+                                {% else %}
+                                <p>No Message</p>
+
+                                {% endif %}
+
+                            </td>
+
+                            <td><a href="view_resume/{{asp.phone}}" target="_blank" style="color: blue !important">{{asp.name}}.pdf</a>
+                            </td>
+
+                        </tr>
+
+                        {% endfor %}
+
+                        <!--- End Of for Loop --->
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
         </div>
-        <!--<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>-->
-      </div>
     </div>
 
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
+
+    <!--- Footer Division --->
 
 
     <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center alok_class">
-          <small>Copyright © Patel&Jesalpura 2018</small>
+        <div class="container">
+            <div class="text-center alok_class">
+                <small>Copyright © Patel&Jesalpura 2018</small>
+            </div>
         </div>
-      </div>
     </footer>
 
 
     <!-- Scroll to Top Button-->
 
+
     <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fa fa-angle-up"></i>
+        <i class="fa fa-angle-up"></i>
     </a>
 
 
     <!-- Logout Modal-->
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
 
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="logout">Logout</a>
-          </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="logout">Logout</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
 
-
-
-      <script type="text/javascript">
+    <script type="text/javascript">
 
   window.unload = function(){
    $.ajax({url: "logout", success: function(result){
         }});
 }
 
-$( window ).unload(function() {
-  alert("A");
-});
-
-      </script>
-
-
+    </script>
 
 
     <!-- Bootstrap core JavaScript-->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 
-
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <!-- Core plugin JavaScript-->
-
 
     <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
     <!-- Page level plugin JavaScript-->
 
-
-
     <script src="{% static 'vendor/datatables/jquery.dataTables.js' %}"></script>
-
 
 
     <script src="{% static 'vendor/datatables/dataTables.bootstrap4.js' %}"></script>
@@ -219,13 +234,10 @@ $( window ).unload(function() {
     <script src="
       {% static 'js/sb-admin.min.js' %}"></script>
 
-
-
-
     <!-- Custom scripts for this page-->
     <script src="{% static 'js/sb-admin-datatables.min.js' %}"></script>
 
-  </div>
+</div>
 </body>
 
 </html>

@@ -631,7 +631,7 @@
       moveOnce('forward');
     }
 
-    this.dhaval = function(start_id) {
+    this.show_member_image_function = function(start_id) {
       /*var direction='forward';
       if (data.currentlyMoving === false) {
         data.previousCenterItem = data.currentCenterItem;
