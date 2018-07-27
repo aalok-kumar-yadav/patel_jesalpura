@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2942c1b-f789-4211-a3f8-8db7c7d44017" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/alok.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/blogHome.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/blogHome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/can_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/can_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/edit_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/edit_blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/forgot-password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/css/navHighlighterStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/index/static/css/navHighlighterStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/css/sb-admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/index/static/css/sb-admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/index/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/images/blog_sample.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/images/home.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/images/home.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/images/home_new.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/images/kk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/images/new_member5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/js/jquery.waterwheelCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/index/static/js/jquery.waterwheelCarousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/js/sb-admin-charts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/js/sb-admin-charts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/vendor/chart.js/Chart.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/vendor/chart.js/Chart.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/vendor/chart.js/Chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/vendor/chart.js/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patel_jesalpura/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/patel_jesalpura/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patel_jesalpura/local_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/patel_jesalpura/local_setting.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="164" column="16" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="16" />
+            <state relative-caret-position="314">
+              <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="local_setting.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/patel_jesalpura/local_setting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
         </entry>
@@ -121,7 +95,6 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/patel_jesalpura/production_setting.py" />
-        <option value="$PROJECT_DIR$/patel_jesalpura/local_setting.py" />
         <option value="$PROJECT_DIR$/index/static/css/navHighlighterStyle.css" />
         <option value="$PROJECT_DIR$/index/static/css/sb-admin.css" />
         <option value="$PROJECT_DIR$/index/static/js/jquery.waterwheelCarousel.js" />
@@ -143,6 +116,7 @@
         <option value="$PROJECT_DIR$/admin_webapp/templates/blogDescription.html" />
         <option value="$PROJECT_DIR$/admin_webapp/views.py" />
         <option value="$PROJECT_DIR$/index/static/css/style.css" />
+        <option value="$PROJECT_DIR$/patel_jesalpura/local_setting.py" />
       </list>
     </option>
   </component>
@@ -175,13 +149,6 @@
               <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
@@ -349,13 +316,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/patel_jesalpura/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patel_jesalpura/local_setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/patel_jesalpura/production_setting.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -550,8 +510,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="164" column="16" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="16" />
+        <state relative-caret-position="314">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patel_jesalpura/local_setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
         </state>
       </provider>
     </entry>
