@@ -267,3 +267,10 @@ $(document).ready(function(){
     $("#div1").show();
 
 });
+
+// Function for reloading Home page
+
+function reload_home_page(){
+
+alert("Thank You For Contacting Us!!!");
+}
