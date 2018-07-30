@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2942c1b-f789-4211-a3f8-8db7c7d44017" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patel_jesalpura/production_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/patel_jesalpura/production_setting.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -46,8 +46,17 @@
       <file leaf-file-name="local_setting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patel_jesalpura/local_setting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="130" column="16" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
+            <state relative-caret-position="393">
+              <caret line="126" selection-start-line="126" selection-end-line="131" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production_setting.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/patel_jesalpura/production_setting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
             </state>
           </provider>
         </entry>
@@ -132,7 +141,6 @@
         <option value="$PROJECT_DIR$/patel_jesalpura/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/patel_jesalpura/production_setting.py" />
         <option value="$PROJECT_DIR$/index/static/css/navHighlighterStyle.css" />
         <option value="$PROJECT_DIR$/index/static/css/sb-admin.css" />
         <option value="$PROJECT_DIR$/index/static/js/jquery.waterwheelCarousel.js" />
@@ -155,6 +163,7 @@
         <option value="$PROJECT_DIR$/index/templates/index.html" />
         <option value="$PROJECT_DIR$/index/views.py" />
         <option value="$PROJECT_DIR$/patel_jesalpura/local_setting.py" />
+        <option value="$PROJECT_DIR$/patel_jesalpura/production_setting.py" />
       </list>
     </option>
   </component>
@@ -344,13 +353,6 @@
     <entry file="file://$PROJECT_DIR$/index/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/patel_jesalpura/production_setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="103" column="6" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -516,6 +518,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#18#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/patel_jesalpura/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -525,18 +537,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/patel_jesalpura/local_setting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="130" column="16" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
+        <state relative-caret-position="393">
+          <caret line="126" selection-start-line="126" selection-end-line="131" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index/views.py">
+    <entry file="file://$PROJECT_DIR$/patel_jesalpura/production_setting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#18#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="303">
+          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
         </state>
       </provider>
     </entry>
