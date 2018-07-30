@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2942c1b-f789-4211-a3f8-8db7c7d44017" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_webapp/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_webapp/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/index/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/static/js/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/index/static/js/project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +13,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="1279" lean-forward="true" selection-start-line="1279" selection-end-line="1279" />
+            <state relative-caret-position="199">
+              <caret line="1272" lean-forward="true" selection-start-line="1272" selection-end-line="1272" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+              <folding>
+                <element signature="e#18#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patel_jesalpura/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="local_setting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patel_jesalpura/local_setting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="130" column="16" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -125,12 +149,12 @@
         <option value="$PROJECT_DIR$/admin_webapp/templates/home.html" />
         <option value="$PROJECT_DIR$/admin_webapp/views.py" />
         <option value="$PROJECT_DIR$/admin_webapp/templates/blogHome.html" />
-        <option value="$PROJECT_DIR$/patel_jesalpura/local_setting.py" />
-        <option value="$PROJECT_DIR$/index/views.py" />
         <option value="$PROJECT_DIR$/index/static/css/style.css" />
         <option value="$PROJECT_DIR$/admin_webapp/templates/login.html" />
         <option value="$PROJECT_DIR$/index/static/js/project.js" />
         <option value="$PROJECT_DIR$/index/templates/index.html" />
+        <option value="$PROJECT_DIR$/index/views.py" />
+        <option value="$PROJECT_DIR$/patel_jesalpura/local_setting.py" />
       </list>
     </option>
   </component>
@@ -163,19 +187,6 @@
               <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
               <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="patel_jesalpura" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="patel_jesalpura" type="b2602c69:ProjectViewProjectNode" />
@@ -442,13 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patel_jesalpura/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patel_jesalpura/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -477,27 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patel_jesalpura/local_setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_webapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1935">
-          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -521,8 +504,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="1279" lean-forward="true" selection-start-line="1279" selection-end-line="1279" />
+        <state relative-caret-position="199">
+          <caret line="1272" lean-forward="true" selection-start-line="1272" selection-end-line="1272" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_webapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patel_jesalpura/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patel_jesalpura/local_setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="130" column="16" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#18#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

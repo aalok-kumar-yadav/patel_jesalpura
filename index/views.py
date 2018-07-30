@@ -4,7 +4,7 @@ import base64, datetime, time
 from django.shortcuts import render
 from admin_webapp.models import Resume_class, SessionClass, BlogPostClass
 from django.shortcuts import redirect
-from django.core.mail import EmailMessage
+from django.core.mail import send_mail
 
 
 # Django View For Client Side Home Page
@@ -57,7 +57,16 @@ def upload_file(request):
         res_object.email = request.POST.get("email")
         res_object.phone = request.POST.get("phone")
         res_object.whywehire_message = request.POST.get("whywe")
-        
+        send_mail(
+            'Internship',
+            'Here is the message.',
+            'mylove836575837273@gmail.com',
+            ['alokyadav495@gmail.com'],
+            fail_silently=False,
+        )
+
+        print("i invoked\n")
+
         res_object.save()                                               # Saving data Into Database
 
         return redirect('home')                 # Redirecting Home Page
